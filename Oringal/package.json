@@ -1,0 +1,22 @@
+{
+  "name": "rebuild",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "",
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "fs": "^0.0.1-security"
+  }
+}

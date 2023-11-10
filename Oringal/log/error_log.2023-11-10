@@ -1,0 +1,8 @@
+Nov 10 06:27:37 2023] [info] [client 66.249.66.6:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Nov 10 06:49:47 2023] [info] [client 12.179.100.234:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AutoDiscover/autodiscover.xml
+Nov 10 08:02:54 2023] [info] [client 114.119.128.58:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Nov 10 08:51:14 2023] [info] [client 12.179.100.234:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AutoDiscover/autodiscover.xml
+Nov 10 10:46:50 2023] [info] [client 12.179.100.234:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AutoDiscover/autodiscover.xml
+Nov 10 10:52:39 2023] [info] [client 159.100.22.184:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/.env
+Nov 10 10:52:39 2023] [info] [client 159.100.22.184:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/docker-compose.yml
+Nov 10 10:52:41 2023] [info] [client 159.100.22.184:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/sendgrid.env

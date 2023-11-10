@@ -1,0 +1,55 @@
+Oct 08 01:04:47 2023] [info] [client 107.178.207.155:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:16 2023] [info] [client 45.61.124.52:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/wp-json/wp/v2/users
+Oct 08 01:09:20 2023] [info] [client 147.185.217.43:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/wp-json/wp/v2/users
+Oct 08 01:09:20 2023] [info] [client 38.153.134.180:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/wp-json/wp/v2/users
+Oct 08 01:09:24 2023] [info] [client 206.41.169.119:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/wp-json/wp/v2/users
+Oct 08 01:09:25 2023] [info] [client 102.212.88.142:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:35 2023] [info] [client 107.178.232.174:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:36 2023] [info] [client 107.178.239.210:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:40 2023] [info] [client 35.203.245.220:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:50 2023] [info] [client 35.203.245.185:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 01:09:51 2023] [info] [client 45.43.84.184:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/wp-json/wp/v2/users
+Oct 08 03:14:48 2023] [info] [client 66.249.66.7:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 13:16:55 2023] [info] [client 14.116.239.35:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/images/0015-3-grady-paver.jpg
+Oct 08 14:36:14 2023] [info] [client 12.179.100.234:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AutoDiscover/autodiscover.xml
+Oct 08 16:58:28 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/data/BusinessJournalGradyBrothersEntry.pdf, referer https://www.gradybros.com/
+Oct 08 16:58:38 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/data/BusinessJournalGradyBrothersEntry.pdf, referer https://www.gradybros.com/
+Oct 08 17:00:31 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/data/BusinessJournalGradyBrothersEntry.pdf
+Oct 08 17:00:32 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/favicon.ico, referer https://www.gradybros.com/data/BusinessJournalGradyBrothersEntry.pdf
+Oct 08 17:00:34 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/data/BusinessJournalGradyBrothersEntry.pdf, referer https://www.gradybros.com/
+Oct 08 17:00:56 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon.png
+Oct 08 17:00:56 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/favicon.ico
+Oct 08 17:00:56 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon-precomposed.png
+Oct 08 17:06:13 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon-120x120-precomposed.png
+Oct 08 17:06:13 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon-120x120.png
+Oct 08 17:06:13 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon-precomposed.png
+Oct 08 17:06:13 2023] [info] [client 68.58.31.187:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/apple-touch-icon.png
+Oct 08 17:16:54 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/default.htm
+Oct 08 17:16:54 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/<frameset><frame src=\\"javascript:alert('XSS');\\"></frameset>
+Oct 08 17:16:56 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/Index.htm
+Oct 08 17:16:56 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AND 1=1 ORDERBY(1,2,3,4,5) --;
+Oct 08 17:16:57 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/home.pl
+Oct 08 17:16:57 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/><script>alert("testing");</script>
+Oct 08 17:16:58 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/AND 1=1 UNION ALL SELECT 1,NULL,1,'<script>alert(\\"666\\")</script>',table_name FROM information_schema.tables WHERE 2>1--/etc/passwd')
+Oct 08 17:16:59 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/<img src="javascript:alert(\\'XSS\\');">
+Oct 08 17:17:00 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/index.shtml
+Oct 08 17:17:00 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/'))) AND 1=1,SELECT * FROM information_schema.tables ((('
+Oct 08 17:17:01 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/home.exe
+Oct 08 17:17:02 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/' )) AND 1=1 (( ' -- rgzd
+Oct 08 17:17:03 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/home.exe
+Oct 08 17:17:05 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/;SELECT * FROM information_schema.tables WHERE 2>1 AND 1=1 OR 2=2 -- qdEf '
+Oct 08 17:17:05 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/<!ENTITY xxe SYSTEM \\"file:/etc/shadow\\" >]><foo>&xxe;</foo>
+Oct 08 17:17:06 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/index.htm
+Oct 08 17:17:06 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/' OR '1'=1 '"
+Oct 08 17:17:07 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/index.php4.exe
+Oct 08 17:17:07 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/') OR "a"="a --
+Oct 08 17:17:08 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/home.htm
+Oct 08 17:17:09 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/<scri<script>pt>alert('123');</scri</script>pt>
+Oct 08 17:17:10 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/index.cgi
+Oct 08 17:17:12 2023] [info] [client 34.70.168.112:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/Index.shtml
+Oct 08 17:17:12 2023] [error] (36)File name too long: [client 34.70.168.112:0] AH00036: access to /;CAT1_GALLERY_1 UNION ALL SELECT (SELECT CAST(CHAR(114)+CHAR(51)+CHAR(100)+CHAR(109)+CHAR(48)+CHAR(118)+CHAR(51)+CHAR(95)+CHAR(104)+CHAR(118)+CHAR(106)+CHAR(95)+CHAR(105)+CHAR(110)+CHAR(106)+CHAR(101)+CHAR(99)+CHAR(116)+CHAR(105)+CHAR(111)+CHAR(110) AS NVARCHAR(4000))),NULL-- failed (filesystem path '/data/1/6/79/2/6079654/user/7171066/htdocs/;CAT1_GALLERY_1 UNION ALL SELECT (SELECT CAST(CHAR(114)+CHAR(51)+CHAR(100)+CHAR(109)+CHAR(48)+CHAR(118)+CHAR(51)+CHAR(95)+CHAR(104)+CHAR(118)+CHAR(106)+CHAR(95)+CHAR(105)+CHAR(110)+CHAR(106)+CHAR(101)+CHAR(99)+CHAR(116)+CHAR(105)+CHAR(111)+CHAR(110) AS NVARCHAR(4000))),NULL--')
+Oct 08 17:18:01 2023] [info] [client 35.226.130.91:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/clientaccesspolicy.xml
+Oct 08 17:18:01 2023] [info] [client 35.226.130.91:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/contribute.json
+Oct 08 17:18:01 2023] [info] [client 35.226.130.91:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/crossdomain.xml
+Oct 08 17:18:01 2023] [info] [client 35.226.130.91:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt
+Oct 08 21:19:10 2023] [info] [client 3.92.167.212:0] AH00128: File does not exist: /data/1/6/79/2/6079654/user/7171066/htdocs/robots.txt

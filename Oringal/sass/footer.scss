@@ -1,0 +1,237 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #323D49;
+    border: none;
+    border-top: 5px solid #309C49;
+
+    /* Footer height */
+    &__holder {
+        width: 85%;
+        margin: auto;
+
+        &__top {
+            height: 54px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            margin: 0px 3px 0px 3px;
+
+            img {
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+
+                text-align: center;
+                font-size: 14px;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
+
+        }
+
+        &__hr {
+            height: 3px;
+            background-color: #fff;
+        }
+
+        &__bottom {
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            margin-top: 13px;
+            margin-bottom: 13px;
+
+            &__holderForLogoName {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    margin-right: 25px;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                    font-size: 16px;
+                }
+            }
+
+            &__copyrightInformation {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+}
+
+.footerM {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #323D49;
+    border: none;
+    border-top: 5px solid #309C49;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        p {
+            margin-bottom: 0px;
+            font-size: 16px;
+        }
+    }
+
+    hr {
+        height: 2px;
+        background-color: #fff;
+        border: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    &__middle {
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+
+        &__logoCoName {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0px;
+                font-size: 10px;
+            }
+
+            img {
+                width: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 10px 0px 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    .footer {
+        &__holder {
+            &__top {
+                p {}
+            }
+
+            &__hr {}
+
+            &__bottom {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1480px) {}
+
+@media only screen and (max-width: 1280px) {
+    .footer {
+        &__holder {
+            &__top {
+                height: 50px;
+                margin: 0px 2px 0px 2px;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            &__bottom {
+                height: 65px;
+                margin: 10px 0px 10px 0px;
+
+                &__holderForLogoName {
+                    img {}
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {}
+
+@media only screen and (max-width: 910px) {
+    .footer {
+        display: none;
+    }
+
+    .footerM {
+        display: block;
+
+        &__top {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footerM {
+        &__top {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        &__bottom {
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .footerM {
+        &__bottom {
+            p {
+                font-size: 8px;
+            }
+        }
+    }
+}
