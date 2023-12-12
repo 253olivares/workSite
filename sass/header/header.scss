@@ -1,0 +1,201 @@
+.header {
+    width: 100%;
+    z-index: 5;
+    box-sizing: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-size: 16px;
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    &__phoneStrip {
+        width: 100%;
+        background-color: $darkBlueGreen;
+        padding: 12px 0px 12px 0px;
+
+        &__holder {
+            width: 85%;
+            max-width: 1920px;
+            margin: auto;
+
+            &__info {
+                font-size: 1em;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+    }
+
+    &__logoCompany {
+        background-color: $white;
+        width: 100%;
+        padding: 17px 0px 17px 0px;
+
+        &__holder {
+            width: 85%;
+            max-width: 1920px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__imageText {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                img {
+                    margin-right: 25px;
+                    width: 100px;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+            }
+
+            &__pageSearch {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                border: #707070 solid 2px;
+                height: 30px;
+                transition: all .5s;
+
+                input {
+                    width: 225px;
+                    padding: 5px;
+                    border-radius: 50px 0px 0px 50px;
+                    border: none;
+                }
+
+                img {
+                    margin-right: 15px;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &__pageSearch:hover {
+                border-color: $green;
+            }
+        }
+    }
+
+    &__nav {
+        width: 100%;
+        background-color: $green;
+        font-size: 17px;
+
+        &__holder {
+            color: $white;
+            width: 85%;
+            max-width: 1920px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-size: 1.5em;
+                }
+
+                a {
+                    padding: 9px 17px 9px 17px;
+                    text-decoration: none;
+                    color: $white;
+                    position: relative;
+                    z-index: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                a:after,
+                a:before {
+                    transition: all .5s;
+                }
+
+                a:after {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 0%;
+                    content: '';
+                    color: transparent;
+                    background-color: $gold;
+                    height: 4px;
+                    position: absolute;
+                }
+
+                a:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__mobile {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 930px) {
+    .header {
+        padding: 15px 0px 15px 0px;
+        border-bottom: 5px solid $green;
+
+        &__phoneStrip {
+            display: none;
+        }
+
+        &__logoCompany {
+            display: none;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__mobile {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: $white;
+
+            button {
+                color: $gray;
+                position: absolute;
+                width: 60px;
+                height: 50px;
+                padding: 0px;
+                margin-left: 2.5%;
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    color: $gray;
+                    width: 35px;
+                }
+            }
+
+            h1 {
+                margin: auto;
+                text-align: center;
+                padding: 0%;
+                font-size: 1.625em;
+            }
+        }
+    }
+}

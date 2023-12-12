@@ -36,10 +36,6 @@ p {
   position: relative;
   min-height: 100vh; }
 
-#content-wrap {
-  padding-bottom: 175px;
-  /* Footer height */ }
-
 .modal {
   position: fixed;
   width: 100vw;
@@ -48,3 +44,198 @@ p {
   justify-content: center;
   align-items: center;
   display: none; }
+
+.header {
+  width: 100%;
+  z-index: 5;
+  box-sizing: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size: 16px; }
+  .header p {
+    margin-bottom: 0px; }
+  .header__phoneStrip {
+    width: 100%;
+    background-color: #323D49;
+    padding: 12px 0px 12px 0px; }
+    .header__phoneStrip__holder {
+      width: 85%;
+      max-width: 1920px;
+      margin: auto; }
+      .header__phoneStrip__holder__info {
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff; }
+  .header__logoCompany {
+    background-color: #fff;
+    width: 100%;
+    padding: 17px 0px 17px 0px; }
+    .header__logoCompany__holder {
+      width: 85%;
+      max-width: 1920px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header__logoCompany__holder__imageText {
+        display: flex;
+        align-items: center;
+        justify-content: start; }
+        .header__logoCompany__holder__imageText img {
+          margin-right: 25px;
+          width: 100px; }
+        .header__logoCompany__holder__imageText p {
+          margin-bottom: 0px;
+          font-size: 1.2em;
+          font-weight: bold; }
+      .header__logoCompany__holder__pageSearch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: #707070 solid 2px;
+        height: 30px;
+        transition: all .5s; }
+        .header__logoCompany__holder__pageSearch input {
+          width: 225px;
+          padding: 5px;
+          border-radius: 50px 0px 0px 50px;
+          border: none; }
+        .header__logoCompany__holder__pageSearch img {
+          margin-right: 15px; }
+        .header__logoCompany__holder__pageSearch img:hover {
+          cursor: pointer; }
+      .header__logoCompany__holder__pageSearch:hover {
+        border-color: #309C49; }
+  .header__nav {
+    width: 100%;
+    background-color: #309C49;
+    font-size: 17px; }
+    .header__nav__holder {
+      color: #fff;
+      width: 85%;
+      max-width: 1920px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header__nav__holder ul {
+        display: flex;
+        align-items: center; }
+        .header__nav__holder ul span {
+          font-size: 1.5em; }
+        .header__nav__holder ul a {
+          padding: 9px 17px 9px 17px;
+          text-decoration: none;
+          color: #fff;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        .header__nav__holder ul a:after,
+        .header__nav__holder ul a:before {
+          transition: all .5s; }
+        .header__nav__holder ul a:after {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '';
+          color: transparent;
+          background-color: #E5B700;
+          height: 4px;
+          position: absolute; }
+        .header__nav__holder ul a:hover:after {
+          width: 100%; }
+  .header__mobile {
+    display: none; }
+
+@media only screen and (max-width: 930px) {
+  .header {
+    padding: 15px 0px 15px 0px;
+    border-bottom: 5px solid #309C49; }
+    .header__phoneStrip {
+      display: none; }
+    .header__logoCompany {
+      display: none; }
+    .header__nav {
+      display: none; }
+    .header__mobile {
+      display: flex;
+      align-items: center;
+      position: relative;
+      background-color: #fff; }
+      .header__mobile button {
+        color: #707070;
+        position: absolute;
+        width: 60px;
+        height: 50px;
+        padding: 0px;
+        margin-left: 2.5%; }
+        .header__mobile button .hamburger-inner,
+        .header__mobile button .hamburger-inner::before,
+        .header__mobile button .hamburger-inner::after {
+          color: #707070;
+          width: 35px; }
+      .header__mobile h1 {
+        margin: auto;
+        text-align: center;
+        padding: 0%;
+        font-size: 1.625em; } }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #323D49;
+  border: none;
+  border-top: 5px solid #309C49;
+  font-size: 16px; }
+  .footer__holder {
+    width: 85%;
+    max-width: 1920px;
+    margin: auto; }
+    .footer__holder__top {
+      height: 54px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      margin: 0px 3px 0px 3px; }
+      .footer__holder__top img {
+        display: flex;
+        align-items: center; }
+      .footer__holder__top p {
+        text-align: center;
+        font-size: .875em;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center; }
+      .footer__holder__top p:hover {
+        cursor: pointer; }
+    .footer__holder__hr {
+      height: 3px;
+      background-color: #fff; }
+    .footer__holder__bottom {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+      margin-top: 13px;
+      margin-bottom: 13px; }
+      .footer__holder__bottom__holderForLogoName {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+        .footer__holder__bottom__holderForLogoName img {
+          margin-right: 25px; }
+        .footer__holder__bottom__holderForLogoName p {
+          margin-bottom: 0px;
+          font-size: 1.05em; }
+      .footer__holder__bottom__mobilehr {
+        display: none; }
+      .footer__holder__bottom__copyrightInformation {
+        font-size: .8em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px; }

@@ -1,0 +1,81 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $darkBlueGreen;
+    border: none;
+    border-top: 5px solid $green;
+    font-size: 16px;
+
+    &__holder {
+        width: 85%;
+        max-width: 1920px;
+        margin: auto;
+
+        &__top {
+            height: 54px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $white;
+            margin: 0px 3px 0px 3px;
+
+            img {
+                display: flex;
+                align-items: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: .875em;
+                margin-bottom: 0px;
+                display: flex;
+                align-items: center;
+            }
+
+            p:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__hr {
+            height: 3px;
+            background-color: $white;
+        }
+
+        &__bottom {
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            color: $white;
+            margin-top: 13px;
+            margin-bottom: 13px;
+
+            &__holderForLogoName {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    margin-right: 25px;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                    font-size: 1.05em;
+                }
+            }
+
+            &__mobilehr {
+                display: none;
+            }
+
+            &__copyrightInformation {
+                font-size: .8em;
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

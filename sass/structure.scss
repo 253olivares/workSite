@@ -1,5 +1,9 @@
 // colors preset
-
+$white : #fff;
+$gray: #707070;
+$darkBlueGreen: #323D49;
+$green: #309C49;
+$gold: #E5B700;
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -47,10 +51,7 @@ p {
     min-height: 100vh;
 }
 
-#content-wrap {
-    padding-bottom: 175px;
-    /* Footer height */
-}
+
 
 .modal {
     position: fixed;
