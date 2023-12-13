@@ -1,6 +1,7 @@
 // colors preset
 $white : #fff;
 $gray: #707070;
+$lighterGray: #f0f0f0;
 $darkBlueGreen: #323D49;
 $green: #309C49;
 $gold: #E5B700;
@@ -31,9 +32,20 @@ $gold: #E5B700;
     font-family: Arial;
 }
 
+html,
 body {
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
     position: relative;
+    -ms-overflow-style: hidden;
+    scrollbar-width: none;
+    background-color: $white;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 h1,

@@ -28,10 +28,19 @@ let closeMobileFromNav = () => {
 
 let hamburgerlistener = () => {
     $(".hamburger").click(() => {
+        let mobileMenuiDiv = $(".mobNav");
+        let topNavDiv = $(".header")
+        let t = 0;
         if (!$(".hamburger").hasClass("is-active")) {
+            t = topNavDiv.outerHeight(true);
+            mobileMenuiDiv.css("height", `calc(100vh - ${t}px + 5px)`)
+            mobileMenuiDiv.css("top", `${t}px`);
             $(".hamburger").addClass("is-active");
             $("html").css("overflow", "hidden");
         } else {
+            t = 0;
+            mobileMenuiDiv.css("height", `calc(100vh - ${t}px)`)
+            mobileMenuiDiv.css("top", `-100vh`);
             $(".hamburger").removeClass("is-active");
             $("html").css("overflow", "");
         }

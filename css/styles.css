@@ -19,9 +19,19 @@
   box-sizing: border-box;
   font-family: Arial; }
 
+html,
 body {
   overflow-x: hidden;
-  position: relative; }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -ms-overflow-style: hidden;
+  scrollbar-width: none;
+  background-color: #fff;
+  scroll-behavior: smooth; }
+
+body::-webkit-scrollbar {
+  display: none; }
 
 h1,
 h2,
@@ -47,9 +57,11 @@ p {
 
 .header {
   width: 100%;
-  z-index: 5;
   box-sizing: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  font-size: 16px; }
+  font-size: 16px;
+  position: relative;
+  background-color: #fff;
+  z-index: 10; }
   .header p {
     margin-bottom: 0px; }
   .header__phoneStrip {
@@ -150,6 +162,19 @@ p {
   .header__mobile {
     display: none; }
 
+.mobNav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 120px);
+  top: -100vh;
+  background-color: #fff;
+  z-index: 7;
+  transition: top .8s ease-in-out; }
+
 @media only screen and (max-width: 930px) {
   .header {
     padding: 15px 0px 15px 0px;
@@ -181,7 +206,68 @@ p {
         margin: auto;
         text-align: center;
         padding: 0%;
-        font-size: 1.625em; } }
+        font-size: 1.625em; }
+  .mobNav {
+    display: flex;
+    font-size: 16px; }
+    .mobNav__welcome {
+      width: 100%;
+      background-color: #f0f0f0;
+      border-bottom: #707070 solid 5px; }
+      .mobNav__welcome h1 {
+        margin-bottom: 0px;
+        padding: 15px 0px 15px 2.5%;
+        font-size: 1.5em; }
+    .mobNav__options {
+      width: 100%; }
+      .mobNav__options ul {
+        width: 100%; }
+        .mobNav__options ul a {
+          width: 100%;
+          color: black;
+          display: inline-block;
+          margin: 10px 0px 10px 2.5%;
+          font-size: 1.2em;
+          text-decoration: none; }
+          .mobNav__options ul a::after {
+            content: ">";
+            position: absolute;
+            right: 20px;
+            font-size: 14px; }
+        .mobNav__options ul hr {
+          height: 4px;
+          background-color: #309C49;
+          border: none; }
+    .mobNav__footers {
+      display: flex;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .mobNav__footers a img {
+        width: 36px;
+        margin-bottom: 8px; }
+      .mobNav__footers hr {
+        width: 100%;
+        border: none;
+        height: 3px;
+        background-color: #309C49; }
+      .mobNav__footers__company {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px 20px 0px; }
+        .mobNav__footers__company img {
+          width: 55px;
+          height: 28px; }
+        .mobNav__footers__company h1 {
+          color: black;
+          font-size: 1em;
+          margin-left: 15px;
+          margin-bottom: 0px;
+          line-height: 28px; } }
 
 .footer {
   position: absolute;
@@ -239,3 +325,34 @@ p {
         display: flex;
         align-items: center;
         margin-bottom: 0px; }
+
+@media only screen and (max-width: 930px) {
+  .footer__holder {
+    width: 100%; }
+    .footer__holder__top {
+      justify-content: center;
+      height: auto;
+      padding: 13px 0px 13px 0px; }
+      .footer__holder__top__socials {
+        display: none; }
+    .footer__holder__bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .footer__holder__bottom__holderForLogoName {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0px auto 13px auto; }
+        .footer__holder__bottom__holderForLogoName img {
+          margin-left: 3%;
+          width: 60px; }
+        .footer__holder__bottom__holderForLogoName p {
+          font-size: 1em; }
+      .footer__holder__bottom__mobilehr {
+        display: flex;
+        height: 3px;
+        background-color: #fff;
+        width: 100%; }
+      .footer__holder__bottom__copyrightInformation {
+        margin-top: 13px; } }

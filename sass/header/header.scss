@@ -1,8 +1,10 @@
 .header {
     width: 100%;
-    z-index: 5;
     box-sizing: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     font-size: 16px;
+    position: relative;
+    background-color: $white;
+    z-index: 10;
 
     p {
         margin-bottom: 0px;
@@ -151,6 +153,20 @@
 
 }
 
+.mobNav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 120px);
+    top: -100vh;
+    background-color: $white;
+    z-index: 7;
+    transition: top .8s ease-in-out;
+}
+
 @media only screen and (max-width: 930px) {
     .header {
         padding: 15px 0px 15px 0px;
@@ -195,6 +211,97 @@
                 text-align: center;
                 padding: 0%;
                 font-size: 1.625em;
+            }
+        }
+    }
+
+    .mobNav {
+        display: flex;
+        font-size: 16px;
+
+        &__welcome {
+            width: 100%;
+            background-color: $lighterGray;
+            border-bottom: $gray solid 5px;
+
+            h1 {
+                margin-bottom: 0px;
+                padding: 15px 0px 15px 2.5%;
+                font-size: 1.5em;
+            }
+        }
+
+        &__options {
+            width: 100%;
+
+            ul {
+                width: 100%;
+
+                a {
+                    width: 100%;
+                    color: black;
+                    display: inline-block;
+                    margin: 10px 0px 10px 2.5%;
+                    font-size: 1.2em;
+                    text-decoration: none;
+
+                    &::after {
+                        content: ">";
+                        position: absolute;
+                        right: 20px;
+                        font-size: 14px;
+                    }
+                }
+
+                hr {
+                    height: 4px;
+                    background-color: $green;
+                    border: none;
+                }
+            }
+        }
+
+        &__footers {
+            display: flex;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            a {
+                img {
+                    width: 36px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            hr {
+                width: 100%;
+                border: none;
+                height: 3px;
+                background-color: $green;
+            }
+
+            &__company {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 20px 0px 20px 0px;
+
+                img {
+                    width: 55px;
+                    height: 28px;
+                }
+
+                h1 {
+                    color: black;
+                    font-size: 1em;
+                    margin-left: 15px;
+                    margin-bottom: 0px;
+                    line-height: 28px;
+                }
             }
         }
     }
