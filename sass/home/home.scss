@@ -1,0 +1,184 @@
+.mainBody {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    font-size: 16px;
+
+    &__hero {
+        width: 100%;
+        min-height: 625px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+
+        &__slidesAnimated {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            display: flex;
+            transition: left 1.2s ease-in-out;
+
+            &__slide {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: block;
+                z-index: 0;
+            }
+
+            &__slide:nth-child(2) {
+                left: 100%;
+            }
+
+            &__slide:nth-child(3) {
+                left: 200%;
+            }
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        &__info {
+            z-index: 1;
+            padding: 0px 20px 0px 20px;
+            width: 85%;
+            max-width: 1920px;
+            height: 100%;
+            margin: auto;
+            position: relative;
+
+            h1 {
+                color: $white;
+                font-size: 2.8125em;
+            }
+
+            p {
+                width: 65%;
+                color: $white;
+                font-size: 1.1875em;
+            }
+        }
+    }
+
+    &__asphalt {
+        width: 85%;
+        max-width: 1920px;
+        min-height: 350px;
+        margin: 100px auto 75px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gray;
+
+        &__info {
+            width: 45%;
+            padding: 23px;
+
+            h1 {
+                font-weight: bold;
+                margin-bottom: 0px;
+                font-size: 1.75em;
+            }
+
+            hr {
+                margin-top: 5px;
+                background-color: $green;
+                border: none;
+                width: 400px;
+                height: 3px;
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 1.25em;
+                width: 100%;
+            }
+        }
+
+        &__image {
+            width: 55%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 435px;
+                margin: auto;
+                border-radius: 15px;
+                transform: perspective(450px) rotateY(-8deg);
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            }
+        }
+
+    }
+
+    &__awards {
+        width: 100%;
+        min-width: 1350px;
+        max-width: 1920px;
+        color: $gray;
+        margin: 125px auto 25px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 0px;
+            font-size: 1.75em;
+            text-align: center;
+        }
+
+        hr {
+            margin: 6px auto 5px auto;
+            background-color: $green;
+            border: none;
+            height: 3px;
+            width: 360px;
+            text-align: center;
+        }
+
+        &__listings {
+            margin: 80px auto 0px auto;
+            width: 75%;
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.875em;
+            }
+
+            &__distingishedPartner {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 150px;
+
+                img {
+                    display: block;
+                    width: 350px;
+                    border-radius: 25px;
+                    transform: perspective(450px) rotateY(8deg);
+                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+                }
+            }
+
+            &__distingishedPartner:nth-child(2) {
+
+                img {
+                    transform: perspective(450px) rotateY(-8deg);
+                }
+            }
+        }
+    }
+}

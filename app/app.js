@@ -1,16 +1,58 @@
 var feedbackS, reviewS, workS = []
 
+let i;
 let slideIndex = 0;
 
-let afterRoute = () => {
+let showSlides = () => {
+    try {
+        let hashTag = window.location.hash;
+        let pageID = hashTag.replace("#/", "");
+        console.log(pageID);
+        if (pageID == "" || pageID == "home") {
+            let slides = $(".mainBody__hero__slidesAnimated__slide").length - 1;
+            for (i = 0; i < slides; i++) {
+                if (slideIndex == 0) {
+                    $(".slideDynamic").css("left", "0%");
+                } else if (slideIndex == 1) {
+                    $(".slideDynamic").css("left", "-100%");
+                } else if (slideIndex == 2) {
+                    $(".slideDynamic").css("left", "-200%");
+                }
+            }
+            slideIndex++;
+            if (slideIndex > slides) { slideIndex = 0 }
+            console.log("ran");
+            setTimeout(showSlides, 5000);
+        } else {
+            return false;
+        }
+    } catch (e) {
+        console.error(e);
+        alert(e);
+    }
+}
 
+let afterRoute = (pageID) => {
+    switch (pageID) {
+        case "home":
+            showSlides();
+            break;
+        case "contact":
+            break;
+        case "feedback":
+            break;
+        case "aboutus":
+            break
+        case "work":
+            break
+    }
 }
 
 let route = () => {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace("#/", "");
     if (!pageID) {
-        MODEL.changeContent("home");
+        MODEL.changeContent("home", afterRoute);
     } else {
         MODEL.changeContent(pageID, afterRoute);
     }
@@ -18,7 +60,7 @@ let route = () => {
 
 let setFooterHeight = () => {
     // code created to set footer height for formating
-    $("#content-wrap").css("padding-bottom", $(".footer").height())
+    $("#content-wrap").css("padding-bottom", $(".footer").height() - 5)
 }
 
 let closeMobileFromNav = () => {
@@ -47,6 +89,13 @@ let hamburgerlistener = () => {
     });
 }
 
+let clickFooter = () => {
+    $(".clickScroll").click(() => {
+        document.getElementById("headerScroll").scrollIntoView({ behavior: 'smooth', block: 'center' });
+    })
+    console.log("click");
+}
+
 let checkHash = () => {
     $(window).on("hashchange", route);
     route();
@@ -57,6 +106,7 @@ $(document).ready(() => {
     try {
         setFooterHeight();
         hamburgerlistener();
+        clickFooter();
         checkHash();
     } catch (e) {
         console.error(e);
