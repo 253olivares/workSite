@@ -69,7 +69,7 @@ let closeMobileFromNav = () => {
 }
 
 let hamburgerlistener = () => {
-    $(".hamburger").click(() => {
+    $(".hamburger, .mobileClose").click(() => {
         let mobileMenuiDiv = $(".mobNav");
         let topNavDiv = $(".header")
         let t = 0;
@@ -101,12 +101,17 @@ let checkHash = () => {
     route();
 }
 
+let closeMenuListener = () => {
+
+}
+
 $(document).ready(() => {
     console.log("Page has loaded basic functions completed. ");
     try {
         setFooterHeight();
         hamburgerlistener();
         clickFooter();
+        closeMenuListener();
         checkHash();
     } catch (e) {
         console.error(e);
