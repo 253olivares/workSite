@@ -65,26 +65,43 @@ let setFooterHeight = () => {
 
 let closeMobileFromNav = () => {
     $(".hamburger").removeClass("is-active");
-    $("html").css("overflow", "");
+    $("html,body").css("overflow", "");
+}
+
+let page = () => {
+
+    return true;
 }
 
 let hamburgerlistener = () => {
-    $(".hamburger, .mobileClose").click(() => {
+    $(".hamburger, .mobileClose").click(async () => {
         let mobileMenuiDiv = $(".mobNav");
         let topNavDiv = $(".header")
         let t = 0;
         if (!$(".hamburger").hasClass("is-active")) {
-            t = topNavDiv.outerHeight(true);
-            mobileMenuiDiv.css("height", `calc(100vh - ${t}px + 5px)`)
-            mobileMenuiDiv.css("top", `${t}px`);
-            $(".hamburger").addClass("is-active");
-            $("html").css("overflow", "hidden");
+            // $("html, body").animate({ scrollTop: -10 }, 'slow', () => {
+            //     t = topNavDiv.outerHeight(true);
+            //     mobileMenuiDiv.css("height", `calc(100vh - ${t}px + 5px)`)
+            //     mobileMenuiDiv.css("top", `${t}px`);
+            //     $(".hamburger").addClass("is-active");
+            //     $("html,body").css("overflow", "hidden");
+            // });
+            document.getElementById("headerScroll").scrollIntoView({ behavior: 'smooth', block: 'center' });
+            await $("html, body").stop().animate(
+                { scrollY: 0 }, () => {
+                    t = topNavDiv.outerHeight(true);
+                    mobileMenuiDiv.css("height", `calc(100vh - ${t}px + 5px)`)
+                    mobileMenuiDiv.css("top", `${t}px`);
+                    $(".hamburger").addClass("is-active");
+                    $("html,body").css("overflow", "hidden");
+                });
+
         } else {
             t = 0;
             mobileMenuiDiv.css("height", `calc(100vh - ${t}px)`)
             mobileMenuiDiv.css("top", `-100vh`);
             $(".hamburger").removeClass("is-active");
-            $("html").css("overflow", "");
+            $("html,body").css("overflow", "");
         }
     });
 }

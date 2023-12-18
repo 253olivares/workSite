@@ -20,36 +20,6 @@
             margin-top: 15px;
         }
 
-        &__fundamentalBelief {
-            margin-bottom: 150px;
-
-            h1 {
-                width: 100%;
-                text-align: center;
-                font-weight: bold;
-                margin: 125px auto 0px auto;
-                font-size: 28px;
-
-            }
-
-            hr {
-                margin: auto;
-                margin-top: 5px;
-                background-color: #309C49;
-                border: none;
-                width: 400px;
-                height: 3px;
-            }
-
-            p {
-                width: 800px;
-                text-align: center;
-                margin: auto;
-                margin-top: 25px;
-                font-size: 24px;
-            }
-        }
-
         &__aboutTheCompany {
             margin-bottom: 50px;
 
@@ -87,6 +57,36 @@
                     width: 475px;
                     margin-right: 10%;
                 }
+            }
+        }
+
+        &__fundamentalBelief {
+            margin-bottom: 150px;
+
+            h1 {
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                margin: 125px auto 0px auto;
+                font-size: 28px;
+
+            }
+
+            hr {
+                margin: auto;
+                margin-top: 5px;
+                background-color: #309C49;
+                border: none;
+                width: 400px;
+                height: 3px;
+            }
+
+            p {
+                width: 800px;
+                text-align: center;
+                margin: auto;
+                margin-top: 25px;
+                font-size: 24px;
             }
         }
 

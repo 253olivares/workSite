@@ -474,6 +474,131 @@ p {
           width: 300px;
           margin-top: 30px; } }
 
+.mainBodyAboutUs {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  color: #707070;
+  font-size: 16px; }
+  .mainBodyAboutUs__hero {
+    width: 100%;
+    height: 625px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .mainBodyAboutUs__content {
+    width: 85%;
+    margin: auto; }
+    .mainBodyAboutUs__content__imgCaption {
+      margin-top: 15px; }
+    .mainBodyAboutUs__content__aboutCompany {
+      margin-bottom: 50px; }
+      .mainBodyAboutUs__content__aboutCompany__header h1 {
+        width: 100%;
+        font-weight: bold;
+        margin: 75px auto 0px auto;
+        font-size: 1.75em; }
+      .mainBodyAboutUs__content__aboutCompany__header hr {
+        margin-top: 15px;
+        background-color: #309C49;
+        border: none;
+        width: 300px;
+        height: 3px; }
+      .mainBodyAboutUs__content__aboutCompany__info {
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between; }
+        .mainBodyAboutUs__content__aboutCompany__info p {
+          width: 45%;
+          font-size: 1.1875em; }
+        .mainBodyAboutUs__content__aboutCompany__info img {
+          width: 475px;
+          margin-right: 10%; }
+    .mainBodyAboutUs__content__fundamentalBelief {
+      margin-bottom: 150px; }
+      .mainBodyAboutUs__content__fundamentalBelief h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin: 125px auto 0px auto; }
+      .mainBodyAboutUs__content__fundamentalBelief hr {
+        margin: auto;
+        margin-top: 5px;
+        background-color: #309C49;
+        border: none;
+        width: 400px;
+        height: 3px; }
+      .mainBodyAboutUs__content__fundamentalBelief p {
+        width: 800px;
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+        font-size: 1.5em; }
+    .mainBodyAboutUs__content__businessJournal {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 150px; }
+      .mainBodyAboutUs__content__businessJournal__info {
+        width: 45%; }
+        .mainBodyAboutUs__content__businessJournal__info h1 {
+          width: 100%;
+          font-weight: bold;
+          margin: 5px auto 0px auto; }
+        .mainBodyAboutUs__content__businessJournal__info hr {
+          margin-top: 5px;
+          background-color: #309C49;
+          border: none;
+          width: 100%;
+          height: 3px; }
+        .mainBodyAboutUs__content__businessJournal__info__firstText {
+          margin-top: 30px;
+          font-size: 1em; }
+        .mainBodyAboutUs__content__businessJournal__info__downloadText {
+          font-size: 1em; }
+        .mainBodyAboutUs__content__businessJournal__info a {
+          font-size: 1em;
+          color: black;
+          text-decoration: none;
+          padding: 13px;
+          border: 2px #309C49 solid;
+          background: transparent;
+          position: relative;
+          z-index: 1;
+          transition: all .8s ease-in-out; }
+          .mainBodyAboutUs__content__businessJournal__info a__hover {
+            cursor: pointer; }
+          .mainBodyAboutUs__content__businessJournal__info a::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #f0f0f0;
+            display: block;
+            z-index: -1;
+            transition: all .8s ease-in-out;
+            animation: wobbleR .8s ease-in-out; }
+          .mainBodyAboutUs__content__businessJournal__info a:hover::after {
+            width: 100%;
+            animation: wobble .8s ease-in-out; }
+
+@keyframes wobble {
+  0% {
+    border-radius: 0px; }
+  50% {
+    border-radius: 0px 100px 100px 0px; }
+  100% {
+    border-radius: 0px 0px 0px 0px; } }
+      .mainBodyAboutUs__content__businessJournal img {
+        width: 350px;
+        margin-right: 15%;
+        border-radius: 10px; }
+
 .footer {
   position: absolute;
   bottom: 0;
