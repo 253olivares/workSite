@@ -224,11 +224,12 @@ p {
         width: 100%; }
         .mobNav__options ul a {
           width: 100%;
-          color: black;
+          color: #707070;
           display: inline-block;
           margin: 10px 0px 10px 2.5%;
           font-size: 1.2em;
-          text-decoration: none; }
+          text-decoration: none;
+          font-weight: bold; }
           .mobNav__options ul a::after {
             content: ">";
             position: absolute;
@@ -413,14 +414,13 @@ p {
       margin: 0px;
       padding: 0px; }
       .mainBody__hero__info h1 {
-        margin: 0px auto 20px 5%; }
+        margin: 0px 5% 20px 5%; }
       .mainBody__hero__info p {
         display: none; }
   .mainBody__mobileInfo {
     display: block;
     width: 100%; }
     .mainBody__mobileInfo p {
-      width: 100%;
       padding: 25px 5% 0px 5%; }
   .mainBody__asphalt {
     width: 100%;
@@ -474,6 +474,218 @@ p {
           width: 300px;
           margin-top: 30px; } }
 
+.mainBodyContact {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  font-size: 16px;
+  color: #707070; }
+  .mainBodyContact__contactTitle {
+    width: 70%;
+    max-width: 1920px;
+    margin: 45px auto 0px auto; }
+    .mainBodyContact__contactTitle h1 {
+      font-weight: bold;
+      margin-bottom: 0px;
+      font-size: 1.75em; }
+    .mainBodyContact__contactTitle hr {
+      margin-top: 5px;
+      background-color: #309C49;
+      border: none;
+      width: 220px;
+      height: 3px; }
+    .mainBodyContact__contactTitle p {
+      font-size: 1.25em; }
+  .mainBodyContact__mailAddy {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    width: 70%;
+    margin: auto;
+    padding-top: 70px;
+    max-width: 1920px; }
+    .mainBodyContact__mailAddy__poBox {
+      padding: 19px 83px 19px 83px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: #707070 3px solid;
+      text-align: center;
+      transition: all .8s ease-in-out; }
+      .mainBodyContact__mailAddy__poBox img {
+        margin-bottom: 10px; }
+      .mainBodyContact__mailAddy__poBox:hover {
+        transform: scale(1.05);
+        border: #309C49 3px solid;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
+    .mainBodyContact__mailAddy__address {
+      text-align: center;
+      padding: 19px 83px 19px 83px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: #707070 2px solid;
+      transition: all .8s ease-in-out; }
+      .mainBodyContact__mailAddy__address img {
+        margin-bottom: 10px; }
+      .mainBodyContact__mailAddy__address:hover {
+        transform: scale(1.04);
+        border: #309C49 3px solid;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
+  .mainBodyContact__phoneFax {
+    min-width: 720px;
+    max-width: 1920px;
+    width: 45%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px; }
+    .mainBodyContact__phoneFax__info {
+      width: 100%;
+      border: #707070 3px solid;
+      display: flex;
+      transition: all .8s ease-in-out;
+      padding: 23px;
+      justify-content: center; }
+      .mainBodyContact__phoneFax__info img {
+        margin-right: 40px;
+        width: 96px;
+        height: 96px; }
+      .mainBodyContact__phoneFax__info__split {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .mainBodyContact__phoneFax__info__split__top {
+          display: flex;
+          align-items: center; }
+          .mainBodyContact__phoneFax__info__split__top h1 {
+            width: 125px;
+            margin-bottom: 0px;
+            font-size: 1.75em; }
+          .mainBodyContact__phoneFax__info__split__top p {
+            font-size: 1.25em;
+            margin-bottom: 0px; }
+        .mainBodyContact__phoneFax__info__split__bottom {
+          display: flex;
+          align-items: center; }
+          .mainBodyContact__phoneFax__info__split__bottom h1 {
+            width: 125px;
+            margin-bottom: 0px;
+            font-size: 1.75em; }
+          .mainBodyContact__phoneFax__info__split__bottom p {
+            font-size: 1.25em;
+            margin-bottom: 0px; }
+      .mainBodyContact__phoneFax__info:hover {
+        transform: scale(1.03);
+        border: #309C49 3px solid;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
+  .mainBodyContact__emails {
+    width: 70%;
+    max-width: 1920px;
+    margin: auto;
+    min-width: 550px;
+    padding: 30px 0px 120px 0px; }
+    .mainBodyContact__emails__info h1 {
+      margin-bottom: 0px; }
+    .mainBodyContact__emails__info hr {
+      height: 4px;
+      border: none;
+      background-color: #707070; }
+    .mainBodyContact__emails__info__table__row {
+      display: flex;
+      justify-content: space-between;
+      height: 75px;
+      padding: 9px 20px 9px 20px;
+      background-color: #F2EFEF; }
+      .mainBodyContact__emails__info__table__row__columnName {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .mainBodyContact__emails__info__table__row__columnName h1 {
+          margin-bottom: 0px;
+          font-size: 24px; }
+        .mainBodyContact__emails__info__table__row__columnName p {
+          margin-bottom: 0px;
+          font-size: 18px; }
+      .mainBodyContact__emails__info__table__row__emails {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-end; }
+        .mainBodyContact__emails__info__table__row__emails p {
+          margin-bottom: 0px;
+          font-size: 20px; }
+    .mainBodyContact__emails__info__table__row:nth-child(even) {
+      background-color: #fff; }
+
+@media only screen and (max-width: 930px) {
+  .mainBodyContact {
+    width: 100%; }
+    .mainBodyContact__contactTitle {
+      width: 100%;
+      margin: 50px 5% 0px 5%; }
+      .mainBodyContact__contactTitle h1 {
+        font-weight: bold;
+        margin-bottom: 0px;
+        font-size: 1.75em; }
+      .mainBodyContact__contactTitle p {
+        font-size: 1.25em; }
+    .mainBodyContact__mailAddy {
+      min-width: 0px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 50px; }
+      .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
+        margin: 0px auto 75px auto;
+        padding: 19px 75px 19px 75px;
+        width: 500px; }
+        .mainBodyContact__mailAddy__poBox img, .mainBodyContact__mailAddy__address img {
+          width: 64px;
+          margin-bottom: 10px; }
+        .mainBodyContact__mailAddy__poBox h1, .mainBodyContact__mailAddy__address h1 {
+          font-size: 1.5625em; }
+        .mainBodyContact__mailAddy__poBox p, .mainBodyContact__mailAddy__address p {
+          font-size: .875em; }
+    .mainBodyContact__phoneFax {
+      min-width: 0px;
+      width: 500px;
+      margin: auto;
+      padding-bottom: 50px;
+      padding-top: 0px; }
+      .mainBodyContact__phoneFax__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .mainBodyContact__phoneFax__info img {
+          margin: 0px auto 10px auto;
+          width: 64px;
+          height: 64px; }
+        .mainBodyContact__phoneFax__info__split__top, .mainBodyContact__phoneFax__info__split__bottom {
+          margin: 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .mainBodyContact__phoneFax__info__split__top h1, .mainBodyContact__phoneFax__info__split__bottom h1 {
+            width: auto;
+            font-size: 1.375em; }
+          .mainBodyContact__phoneFax__info__split__top p, .mainBodyContact__phoneFax__info__split__bottom p {
+            font-size: .875em; }
+    .mainBodyContact__emails {
+      min-width: none;
+      width: 100%; }
+      .mainBodyContact__emails__info {
+        margin: 0px 5% 0px 5%; }
+        .mainBodyContact__emails__info h1 {
+          font-size: 1.625em; }
+        .mainBodyContact__emails__info__table__row__columnName h1 {
+          font-size: 1.375em; }
+        .mainBodyContact__emails__info__table__row__columnName p {
+          font-size: 1em; }
+        .mainBodyContact__emails__info__table__row__emails p {
+          font-size: 1.125em; } }
+
 .mainBodyAboutUs {
   width: 100%;
   position: relative;
@@ -488,6 +700,7 @@ p {
     background-size: cover; }
   .mainBodyAboutUs__content {
     width: 85%;
+    max-width: 1920px;
     margin: auto; }
     .mainBodyAboutUs__content__imgCaption {
       margin-top: 15px; }
@@ -496,7 +709,7 @@ p {
       .mainBodyAboutUs__content__aboutCompany__header h1 {
         width: 100%;
         font-weight: bold;
-        margin: 75px auto 0px auto;
+        margin: 50px auto 0px auto;
         font-size: 1.75em; }
       .mainBodyAboutUs__content__aboutCompany__header hr {
         margin-top: 15px;
@@ -522,7 +735,7 @@ p {
         width: 100%;
         text-align: center;
         font-weight: bold;
-        margin: 125px auto 0px auto; }
+        margin: 75px auto 0px auto; }
       .mainBodyAboutUs__content__fundamentalBelief hr {
         margin: auto;
         margin-top: 5px;
@@ -598,6 +811,57 @@ p {
         width: 350px;
         margin-right: 15%;
         border-radius: 10px; }
+
+@media only screen and (max-width: 930px) {
+  .mainBodyAboutUs__hero {
+    height: 425px; }
+  .mainBodyAboutUs__content {
+    width: 100%; }
+    .mainBodyAboutUs__content__imgCaption {
+      margin: 0px 5% 0px 5%; }
+    .mainBodyAboutUs__content__aboutCompany {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 5% 0px 5%; }
+      .mainBodyAboutUs__content__aboutCompany h1 {
+        font-size: 1.5em; }
+      .mainBodyAboutUs__content__aboutCompany hr {
+        margin-top: 8px; }
+      .mainBodyAboutUs__content__aboutCompany__info {
+        display: flex;
+        flex-direction: column; }
+        .mainBodyAboutUs__content__aboutCompany__info p {
+          width: 100%;
+          font-size: 1em; }
+        .mainBodyAboutUs__content__aboutCompany__info img {
+          margin: 35px 0px 0px 0px; }
+    .mainBodyAboutUs__content__fundamentalBelief {
+      margin-bottom: 85px; }
+      .mainBodyAboutUs__content__fundamentalBelief h1 {
+        font-size: 1.25em; }
+      .mainBodyAboutUs__content__fundamentalBelief hr {
+        width: 300px; }
+      .mainBodyAboutUs__content__fundamentalBelief p {
+        width: 700px;
+        font-size: 1.125em; }
+    .mainBodyAboutUs__content__businessJournal {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 100px;
+      width: 100%; }
+      .mainBodyAboutUs__content__businessJournal__info {
+        margin: 0px 5% 0px 5%;
+        width: auto; }
+        .mainBodyAboutUs__content__businessJournal__info h1 {
+          font-size: 1.25em; }
+        .mainBodyAboutUs__content__businessJournal__info hr {
+          width: 500px; }
+        .mainBodyAboutUs__content__businessJournal__info__firstText, .mainBodyAboutUs__content__businessJournal__info__downloadText {
+          font-size: .9375em; }
+      .mainBodyAboutUs__content__businessJournal img {
+        width: 325px;
+        margin-top: 50px;
+        margin-right: 0px; } }
 
 .footer {
   position: absolute;

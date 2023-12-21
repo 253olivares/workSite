@@ -15,6 +15,7 @@
 
     &__content {
         width: 85%;
+        max-width: 1920px;
         margin: auto;
 
         &__imgCaption {
@@ -28,7 +29,7 @@
                 h1 {
                     width: 100%;
                     font-weight: bold;
-                    margin: 75px auto 0px auto;
+                    margin: 50px auto 0px auto;
                     font-size: 1.75em;
                 }
 
@@ -67,7 +68,7 @@
                 width: 100%;
                 text-align: center;
                 font-weight: bold;
-                margin: 125px auto 0px auto;
+                margin: 75px auto 0px auto;
             }
 
             hr {
@@ -180,4 +181,95 @@
     }
 }
 
-@media only screen and (max-width: 930px) {}
+@media only screen and (max-width: 930px) {
+    .mainBodyAboutUs {
+        &__hero {
+            height: 425px;
+        }
+
+        &__content {
+            width: 100%;
+
+            &__imgCaption {
+                margin: 0px 5% 0px 5%;
+            }
+
+            &__aboutCompany {
+                display: flex;
+                flex-direction: column;
+                margin: 0px 5% 0px 5%;
+
+                h1 {
+                    font-size: 1.5em
+                }
+
+                hr {
+                    margin-top: 8px;
+                }
+
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        width: 100%;
+                        font-size: 1em;
+                    }
+
+                    img {
+                        margin: 35px 0px 0px 0px;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                margin-bottom: 85px;
+
+                h1 {
+                    font-size: 1.25em;
+                }
+
+                hr {
+                    width: 300px;
+                }
+
+                p {
+                    width: 700px;
+                    font-size: 1.125em
+                }
+            }
+
+            &__businessJournal {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 100px;
+                width: 100%;
+
+                &__info {
+                    margin: 0px 5% 0px 5%;
+                    width: auto;
+
+                    h1 {
+                        font-size: 1.25em;
+                    }
+
+                    hr {
+                        width: 500px;
+                    }
+
+                    &__firstText,
+                    &__downloadText {
+                        font-size: .9375em;
+                    }
+
+                }
+
+                img {
+                    width: 325px;
+                    margin-top: 50px;
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
