@@ -712,7 +712,7 @@ p {
         margin: 50px auto 0px auto;
         font-size: 1.75em; }
       .mainBodyAboutUs__content__aboutCompany__header hr {
-        margin-top: 15px;
+        margin-top: 8px;
         background-color: #309C49;
         border: none;
         width: 300px;
@@ -862,6 +862,65 @@ p {
         width: 325px;
         margin-top: 50px;
         margin-right: 0px; } }
+
+.mainBodyWork {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  color: #707070;
+  font-size: 16px; }
+  .mainBodyWork__main {
+    width: 85%;
+    margin: auto;
+    max-width: 1920px; }
+    .mainBodyWork__main__header {
+      margin-top: 50px; }
+      .mainBodyWork__main__header h1 {
+        font-size: 1.75em;
+        margin-bottom: 0px; }
+      .mainBodyWork__main__header hr {
+        width: 165px;
+        height: 3px;
+        background-color: #309C49;
+        border: none; }
+  .mainBodyWork__reviews {
+    width: 85%;
+    margin: auto auto 50px auto;
+    max-width: 1920px; }
+    .mainBodyWork__reviews__header {
+      margin-top: 75px; }
+      .mainBodyWork__reviews__header h1 {
+        font-size: 1.75em;
+        margin-bottom: 0px; }
+      .mainBodyWork__reviews__header hr {
+        width: 320px;
+        height: 3px;
+        background-color: #309C49;
+        border: none; }
+    .mainBodyWork__reviews__googleReviewGrid {
+      width: 100%;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    .mainBodyWork__reviews button {
+      border: 2px #309C49 solid;
+      background-color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      color: black;
+      position: relative;
+      z-index: 1;
+      transition: all .8s ease-in-out; }
+    .mainBodyWork__reviews button:hover {
+      cursor: pointer; }
+    .mainBodyWork__reviews__button {
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1920px; }
 
 .footer {
   position: absolute;
