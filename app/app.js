@@ -45,22 +45,54 @@ let loadReviews = (callback) => {
     $.each(reviewS, (index, review) => {
         let displayReview = "";
         let scores = "";
-        if (review.comment == "") {
+        // if (review.comment == "") {
 
-        } else {
+        // } else {
 
-        }
+        // }
+        displayReview = `
+        <div class="mainBodyWork__reviews__googleReviewGrid__individualReview">
+        <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore">
+            <h2>${review.name}</h2>
+            <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore__score stars">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            </div>
+        </div>
+        <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__comment">
+        <p>${review.comment}</p>
+    </div>
+    </div>
+        `
         if (index >= 3) {
-
+            if (index == 3) {
+                $(".mainBodyWork__reviews__googleReviewGrid").append(
+                    `<span id="more">
+                    
+                    </span>`
+                )
+            }
+            $("#more").append(displayReview);
         } else {
-
+            $(".mainBodyWork__reviews__googleReviewGrid").append(displayReview);
         }
     });
     callback();
 }
 
 let workPagePagnation = () => {
-
+    $("#rMore").click(() => {
+        if ($("#more").css("display") == "none") {
+            $("#more").css("display", "flex");
+            $("#rMore").html("Read Less...");
+        } else {
+            $("#more").css("display", "none");
+            $("#rMore").html("Read More...");
+        }
+    })
 }
 
 let afterRoute = (pageID) => {
