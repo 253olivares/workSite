@@ -55,11 +55,7 @@ let loadReviews = (callback) => {
         <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore">
             <h2>${review.name}</h2>
             <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore__score stars">
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+            
             </div>
         </div>
         <div class="mainBodyWork__reviews__googleReviewGrid__individualReview__comment">
@@ -76,8 +72,16 @@ let loadReviews = (callback) => {
                 )
             }
             $("#more").append(displayReview);
+
         } else {
             $(".mainBodyWork__reviews__googleReviewGrid").append(displayReview);
+        }
+        for (let i = 0 + 1; i <= 5; i++) {
+            if (i <= review.score) {
+                $('.mainBodyWork__reviews__googleReviewGrid__individualReview:last-child').find(".mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore__score").append(`<span class="fa fa-star checked"></span>`);
+            } else {
+                $('.mainBodyWork__reviews__googleReviewGrid__individualReview:last-child').find(".mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore__score").append(`<span class="fa fa-star"></span>`);
+            }
         }
     });
     callback();
