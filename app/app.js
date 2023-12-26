@@ -3,6 +3,14 @@ var feedbackS, reviewS, workS = []
 let i;
 let slideIndex = 0;
 
+$.getJSON("../data/feedback.json", (feedback) => {
+    feedbackS = feedback.userFeedback;
+})
+
+$.getJSON("../data/reviews.json", (review) => {
+    reviewS = review.userReviews;
+})
+
 let showSlides = () => {
     try {
         let hashTag = window.location.hash;
@@ -32,6 +40,29 @@ let showSlides = () => {
     }
 }
 
+let loadReviews = (callback) => {
+    $(".mainBodyWork__reviews__googleReviewGrid").empty();
+    $.each(reviewS, (index, review) => {
+        let displayReview = "";
+        let scores = "";
+        if (review.comment == "") {
+
+        } else {
+
+        }
+        if (index >= 3) {
+
+        } else {
+
+        }
+    });
+    callback();
+}
+
+let workPagePagnation = () => {
+
+}
+
 let afterRoute = (pageID) => {
     switch (pageID) {
         case "home":
@@ -44,6 +75,7 @@ let afterRoute = (pageID) => {
         case "aboutus":
             break
         case "work":
+            loadReviews(workPagePagnation);
             break
     }
 }
