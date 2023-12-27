@@ -207,7 +207,7 @@ let route = () => {
 
 let setFooterHeight = () => {
     // code created to set footer height for formating
-    $("#content-wrap").css("padding-bottom", $(".footer").height() - 5)
+    $("#content-wrap").css("padding-bottom", $(".footer").height() + 5)
 }
 
 let closeMobileFromNav = () => {

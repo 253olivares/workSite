@@ -3,4 +3,84 @@
         <h1>LEAVE US FEEDBACK</h1>
         <hr>
     </div>
+
+    <form class="" action="send.php" method="post">
+        <p>
+            Tell us what you think about our web site, our products, our organization, or anything else that comes to
+            mind. We welcome all of your comments and suggestions. ( * required fields )
+        </p>
+        <br>
+        <h1>
+            INFORMATION TO GET IN TOUCH
+        </h1>
+        <div class="mainBodyFeedback__contactInfo">
+            <div class="mainBodyFeedback__contactInfo__left">
+                <div class="mainBodyFeedback__contactInfo__left__name">
+                    <label for="name">Name *:</label>
+                    <input type="Name" id="name" type="text" required>
+                </div>
+                <div class="mainBodyFeedback__contactInfo__left__telephone">
+                    <label for="telephone">Tel:</label>
+                    <input type="Telephone" id="telephone" type="text">
+                </div>
+            </div>
+            <div class="mainBodyFeedback__contactInfo__right">
+                <div class="mainBodyFeedback__contactInfo__right__email">
+                    <label for="email">E-mail *:</label>
+                    <input type="email" name="formmail_mail_email" id="email" required>
+                </div>
+                <div class="mainBodyFeedback__contactInfo__right__fax">
+                    <Label for="fax">Fax:</Label>
+                    <input type="Fax" id="fax" type="text">
+                </div>
+            </div>
+        </div>
+        <input type="checkbox" name="urgentRequest" id="urgent" value="true">
+        <label for="urgent" class="urgentMessage"> Please contact me as soon as possible regarding this matter </label>
+        <h1>
+            WHAT ABOUT US DO YOU WANT TO COMMENT ON *?
+        </h1>
+        <div class="mainBodyFeedback__commentOn">
+            <select name="subjectSelect" id="subjects" required>
+                <option value="Company">Company</option>
+                <option value="Website">Products</option>
+                <option value="Services">Services</option>
+                <option value="Employee">Employee</option>
+                <option value="(Other)">(Other)</option>
+            </select>
+            <label for="other">Other:</label>
+            <input type="text" id="other" name="otherSubject">
+        </div>
+        <h1 class="choiceText">
+            WHAT KIND OF COMMENT WOULD YOU LIKE TO SEND *?
+        </h1>
+        <div class="mainBodyFeedback__options">
+            <div class="mainBodyFeedback__options__clump">
+                <input type="radio" name="choice" id="complaint" value="Complaint" name="action">
+                <label for="complaint">Complaint</label>
+            </div>
+            <div class="mainBodyFeedback__options__clump">
+                <input type="radio" name="choice" id="problem" value="Problem" name="action">
+                <label for="problem">Problem</label>
+            </div>
+            <div class="mainBodyFeedback__options__clump">
+                <input type="radio" name="choice" id="suggestion" value="Suggestion" name="action">
+                <label for="suggestion">Suggestion</label>
+            </div>
+            <div class="mainBodyFeedback__options__clump">
+                <input type="radio" name="choice" id="praise" value="Praise" name="action" checked>
+                <label for="praise">Praise</label>
+            </div>
+        </div>
+        <h1 class="choiceText">
+            ENTER YOUR COMMENTS IN THE SPACE PROVIDED BELOW *:
+        </h1>
+        <div class="mainBodyFeedback__inputComment">
+            <textarea name="Comment" id="comment" cols="90" rows="11" required></textarea>
+        </div>
+        <div class="mainBodyFeedback__submitClearButtons">
+            <input value="Submit" type="submit" name="Submit" id="send">
+            <input type="reset" id="clear" value="CLEAR FORM">
+        </div>
+    </form>
 </div>
