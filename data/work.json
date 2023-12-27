@@ -5,7 +5,8 @@
             "name": "Ivy Tech Parking Lot",
             "date": "September 2017",
             "type": "Video",
-            "src": "Ivy_Tech_Pavement.mp4"
+            "src": "Ivy_tech_Pavement_thumbnail.png",
+            "videoSrc": "Ivy_Tech_Pavement.mp4"
         },
         {
             "id": 1,

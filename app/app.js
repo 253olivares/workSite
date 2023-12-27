@@ -11,6 +11,10 @@ $.getJSON("../data/reviews.json", (review) => {
     reviewS = review.userReviews;
 })
 
+$.getJSON("../data/work.json", (work) => {
+    workS = work.workStuff;
+})
+
 let showSlides = () => {
     try {
         let hashTag = window.location.hash;
@@ -99,6 +103,80 @@ let workPagePagnation = () => {
     })
 }
 
+let loadContent = (content) => {
+    let videoPhoto = "";
+    let infot = "";
+    $(".modal").css("display", "flex");
+    $("html,body").css("overflow", "hidden");
+    $(".modal__modalBackground").click(() => {
+        if ($(".videoS")) {
+            $(".videoS").trigger('pause');
+        }
+        $(".modal").css("display", "none");
+        $("html,body").css("overflow", "");
+    })
+    $(".modal__close").click(() => {
+        if ($(".videoS")) {
+            $(".videoS").trigger('pause');
+        }
+        $(".modal").css("display", "none");
+        $("html,body").css("overflow", "");
+    })
+    $.each(workS, (index, work) => {
+        if (work.id == content) {
+            $(".modal__media").empty();
+            $(".modal__information").empty();
+
+            if (work.type == "Video") {
+                videoPhoto = `
+                    <video class="videoS" controls>
+                     <source src="/images/Show/${work.videoSrc}" type="video/mp4">
+                    </video>
+                `
+            } else if (work.type == "Photo") {
+                videoPhoto = `
+                <img src="/images/Show/${work.src}" alt="${work.name} Image">
+                `
+            }
+
+            infot = `
+            <h1>${work.name}</h1>
+            <p>${work.date}</p>
+            `
+
+            $(".modal__media").append(videoPhoto);
+            $(".modal__information").append(infot);
+        }
+    })
+}
+
+let appendWork = () => {
+    $(".mainBodtWork__main__holder__row1, .mainBodtWork__main__holder__row2, .mainBodtWork__main__holder__row3, .mainBodtWork__main__holder__row4").empty();
+    let row = 1;
+    $.each(workS, (index, work) => {
+        let displayWork = `
+            <div class="mainBodyWork__main__holder__row${row}__workDone__entry en" onclick="loadContent(${work.id})">
+                <div class="mainBodyWork__main__holder__row${row}__workDone__entry__image">
+                    <img class="thumbnail" src="/images/Show/${work.src}" alt="${work.src}">
+
+                </div>
+                <div class="mainBodyWork__main__holder__row${row}__workDone__entry__description">
+                    <h1>Location: ${work.name}</h1>
+                    <p>Date: ${work.date}</p>
+                    <p>${work.type}</p>
+                </div>
+            </div>
+        `;
+
+        $(`.mainBodyWork__main__holder__row${row}`).append(displayWork);
+
+        row++;
+        if (row == 5) {
+            row = 1;
+        }
+    });
+}
+
 let afterRoute = (pageID) => {
     switch (pageID) {
         case "home":
@@ -112,6 +190,7 @@ let afterRoute = (pageID) => {
             break
         case "work":
             loadReviews(workPagePagnation);
+            appendWork();
             break
     }
 }

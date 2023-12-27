@@ -48,12 +48,59 @@ p {
 
 .modal {
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 5;
+  z-index: 10;
   justify-content: center;
   align-items: center;
   display: none; }
+  .modal__modalBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11; }
+  .modal__displayContent {
+    z-index: 12;
+    border-radius: 10px;
+    position: relative;
+    width: 800px;
+    background-color: black; }
+  .modal__close {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 13; }
+    .modal__close p {
+      height: 25px;
+      width: 25px;
+      font-size: 2em;
+      margin-bottom: 0px; }
+    .modal__close:hover {
+      cursor: pointer; }
+  .modal video {
+    border-radius: 5px 5px 0px 0px;
+    width: 800px; }
+  .modal img {
+    display: block;
+    margin: auto;
+    width: 335px; }
+  .modal__information {
+    display: flex;
+    color: #707070;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px 5px 25px;
+    background-color: #fff;
+    border-radius: 0px 0px 5px 5px; }
+    .modal__information h1,
+    .modal__information p {
+      margin-bottom: 0px;
+      font-size: 1.2em; }
 
 .header {
   width: 100%;
@@ -61,7 +108,7 @@ p {
   font-size: 16px;
   position: relative;
   background-color: #fff;
-  z-index: 10; }
+  z-index: 5; }
   .header p {
     margin-bottom: 0px; }
   .header__phoneStrip {
@@ -172,7 +219,7 @@ p {
   height: calc(100vh - 120px);
   top: -100vh;
   background-color: #fff;
-  z-index: 7;
+  z-index: 4;
   transition: top .8s ease-in-out; }
 
 @media only screen and (max-width: 930px) {
@@ -883,6 +930,54 @@ p {
         height: 3px;
         background-color: #309C49;
         border: none; }
+    .mainBodyWork__main__holder {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 50px; }
+      .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
+        width: 24.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 50px; }
+        .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 10px;
+          transition: all .8s;
+          margin: 15px auto 10px auto; }
+          .mainBodyWork__main__holder__row1__workDone__entry__image, .mainBodyWork__main__holder__row2__workDone__entry__image, .mainBodyWork__main__holder__row3__workDone__entry__image, .mainBodyWork__main__holder__row4__workDone__entry__image {
+            width: 100%;
+            object-fit: cover;
+            background-color: black;
+            border-radius: 10px 10px 0px 0px; }
+            .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+              height: 150px;
+              object-fit: cover;
+              display: block;
+              margin: auto; }
+            .mainBodyWork__main__holder__row1__workDone__entry__image .thumbnail, .mainBodyWork__main__holder__row2__workDone__entry__image .thumbnail, .mainBodyWork__main__holder__row3__workDone__entry__image .thumbnail, .mainBodyWork__main__holder__row4__workDone__entry__image .thumbnail {
+              border-radius: 10px 10px 0px 0px;
+              width: 100%; }
+          .mainBodyWork__main__holder__row1__workDone__entry__description, .mainBodyWork__main__holder__row2__workDone__entry__description, .mainBodyWork__main__holder__row3__workDone__entry__description, .mainBodyWork__main__holder__row4__workDone__entry__description {
+            padding: 10px; }
+            .mainBodyWork__main__holder__row1__workDone__entry__description h1,
+            .mainBodyWork__main__holder__row1__workDone__entry__description p, .mainBodyWork__main__holder__row2__workDone__entry__description h1,
+            .mainBodyWork__main__holder__row2__workDone__entry__description p, .mainBodyWork__main__holder__row3__workDone__entry__description h1,
+            .mainBodyWork__main__holder__row3__workDone__entry__description p, .mainBodyWork__main__holder__row4__workDone__entry__description h1,
+            .mainBodyWork__main__holder__row4__workDone__entry__description p {
+              margin-bottom: 8px; }
+            .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+              font-size: 1em; }
+            .mainBodyWork__main__holder__row1__workDone__entry__description p, .mainBodyWork__main__holder__row2__workDone__entry__description p, .mainBodyWork__main__holder__row3__workDone__entry__description p, .mainBodyWork__main__holder__row4__workDone__entry__description p {
+              font-size: .8em; }
+          .mainBodyWork__main__holder__row1__workDone__entry:hover, .mainBodyWork__main__holder__row2__workDone__entry:hover, .mainBodyWork__main__holder__row3__workDone__entry:hover, .mainBodyWork__main__holder__row4__workDone__entry:hover {
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            cursor: pointer; }
   .mainBodyWork__reviews {
     width: 85%;
     margin: auto auto 50px auto;
