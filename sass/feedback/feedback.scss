@@ -26,8 +26,8 @@
     }
 
     form {
-        width: 80%;
-        margin: 20px auto 40px auto;
+        width: 85%;
+        margin: 20px auto 50px auto;
 
         h1 {
             font-size: 1.4em;
@@ -37,6 +37,200 @@
             font-size: 1.2em;
         }
     }
+
+    &__contactInfo {
+        display: flex;
+        margin: 40px auto 40px auto;
+
+        label {
+            font-size: 1.1875em;
+            width: 100px;
+            display: block;
+        }
+
+        input {
+            border: none;
+            padding: 5px;
+            font-size: 0.8125em;
+            border-bottom: $gray 2px solid;
+            color: $gray;
+            margin-right: 50px;
+            transition: all .8s;
+
+            &:hover {
+                border-bottom: $gray 2px solid;
+            }
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__name {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            &__telephone {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &__email {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            &__fax {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    input[type=checkbox] {
+        /* Double-sized Checkboxes */
+        -ms-transform: scale(2);
+        /* IE */
+        -moz-transform: scale(2);
+        /* FF */
+        -webkit-transform: scale(2);
+        /* Safari and Chrome */
+        -o-transform: scale(2);
+        /* Opera */
+        transform: scale(1.6);
+        padding: 10px;
+        width: 30px;
+    }
+
+    .urgentMessage {
+        font-size: 1.0625em;
+        margin-left: 25px;
+    }
+
+    .choiceText {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__commentOn {
+        select {
+            border: none;
+            padding: 10px;
+            border-bottom: $gray 2px solid;
+            font-size: 1em;
+            transition: all .8s;
+            margin-right: 25px;
+
+            &:hover {
+                border-bottom: $green 2px solid;
+            }
+        }
+
+        label {
+            font-size: 1.1875em;
+            margin-right: 5px;
+        }
+
+        input {
+            border: none;
+            padding: 5px;
+            font-size: .8125em;
+            border: $gray 2px solid;
+            color: $gray;
+            margin-right: 50px;
+            transition: all .8s;
+
+            &:hover {
+                border-bottom: $green 2px solid;
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+
+        &__clump {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type=radio] {
+            /* Double-sized Checkboxes */
+            -ms-transform: scale(1.5);
+            /* IE */
+            -moz-transform: scale(1.5);
+            /* FF */
+            -webkit-transform: scale(1.5);
+            /* Safari and Chrome */
+            -o-transform: scale(1.5);
+            /* Opera */
+            transform: scale(1.5);
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        label {
+            font-size: 1.125em;
+            margin-right: 40px;
+        }
+    }
+
+    &__inputComment {
+        margin-bottom: 35px;
+
+        textarea {
+            resize: none;
+            font-size: 1.2em;
+            border: $gray 3px solid;
+            background-color: #F2EFEF;
+        }
+    }
+
+    &__submitClearButtons {
+        input {
+            padding: 14px 16px 14px 16px;
+        }
+
+        input[type=submit] {
+            background-color: $green;
+            color: $white;
+            border: none;
+            font-size: 1em;
+            margin-right: 35px;
+            transition: all .8s;
+
+            &:hover {
+                background-color: $green;
+                cursor: pointer;
+            }
+        }
+
+        input[type=reset] {
+            color: $gray;
+            border: none;
+            font-size: 1em;
+            transition: all .8s;
+
+            &:hover {
+                background-color: $lighterGray;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-@media only screen and (max-width:930px) {}
+@media only screen and (max-width:930px) {
+    .mainBodyFeedback {}
+}

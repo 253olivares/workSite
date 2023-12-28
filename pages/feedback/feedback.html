@@ -4,7 +4,7 @@
         <hr>
     </div>
 
-    <form class="" action="send.php" method="post">
+    <form action="send.php" method="post">
         <p>
             Tell us what you think about our web site, our products, our organization, or anything else that comes to
             mind. We welcome all of your comments and suggestions. ( * required fields )
@@ -17,7 +17,7 @@
             <div class="mainBodyFeedback__contactInfo__left">
                 <div class="mainBodyFeedback__contactInfo__left__name">
                     <label for="name">Name *:</label>
-                    <input type="Name" id="name" type="text" required>
+                    <input type="Name" id="name" type="text">
                 </div>
                 <div class="mainBodyFeedback__contactInfo__left__telephone">
                     <label for="telephone">Tel:</label>
@@ -27,7 +27,7 @@
             <div class="mainBodyFeedback__contactInfo__right">
                 <div class="mainBodyFeedback__contactInfo__right__email">
                     <label for="email">E-mail *:</label>
-                    <input type="email" name="formmail_mail_email" id="email" required>
+                    <input type="email" name="formmail_mail_email" id="email">
                 </div>
                 <div class="mainBodyFeedback__contactInfo__right__fax">
                     <Label for="fax">Fax:</Label>
@@ -41,7 +41,7 @@
             WHAT ABOUT US DO YOU WANT TO COMMENT ON *?
         </h1>
         <div class="mainBodyFeedback__commentOn">
-            <select name="subjectSelect" id="subjects" required>
+            <select name="subjectSelect" id="subjects">
                 <option value="Company">Company</option>
                 <option value="Website">Products</option>
                 <option value="Services">Services</option>
@@ -76,11 +76,11 @@
             ENTER YOUR COMMENTS IN THE SPACE PROVIDED BELOW *:
         </h1>
         <div class="mainBodyFeedback__inputComment">
-            <textarea name="Comment" id="comment" cols="90" rows="11" required></textarea>
+            <textarea name="Comment" id="comment" cols="90" rows="11"></textarea>
         </div>
         <div class="mainBodyFeedback__submitClearButtons">
-            <input value="Submit" type="submit" name="Submit" id="send">
-            <input type="reset" id="clear" value="CLEAR FORM">
+            <input type="submit" name="send" id="send">
+            <input type="reset" value="CLEAR FORM" id="clear">
         </div>
     </form>
 </div>
