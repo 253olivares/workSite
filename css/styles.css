@@ -896,14 +896,16 @@ p {
     width: 100%; }
     .mainBodyFeedback__feedbackTitle {
       width: 100%;
-      margin: 50px 0px 0px 0px; }
+      margin: 50px 0px 0px 0px;
+      padding: 0px 5% 0px 5%; }
       .mainBodyFeedback__feedbackTitle h1 {
         font-size: 1.625em; }
       .mainBodyFeedback__feedbackTitle hr {
         width: 325px; }
     .mainBodyFeedback form {
       width: 100%;
-      margin: 20px 0px 50px 0px; }
+      margin: 20px 0px 50px 0px;
+      padding: 0px 5% 0px 5%; }
       .mainBodyFeedback form h1 {
         font-size: 1.125em; }
       .mainBodyFeedback form P {
@@ -1165,7 +1167,7 @@ p {
     margin: auto auto 50px auto;
     max-width: 1920px; }
     .mainBodyWork__reviews__header {
-      margin-top: 75px; }
+      margin-top: 50px; }
       .mainBodyWork__reviews__header h1 {
         font-size: 1.75em;
         margin-bottom: 0px; }
@@ -1176,7 +1178,7 @@ p {
         border: none; }
     .mainBodyWork__reviews__googleReviewGrid {
       width: 100%;
-      padding: 0px 10px 20px 10px;
+      padding: 0px 10px 30px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1230,13 +1232,18 @@ p {
     .mainBodyWork__main {
       width: 100%;
       margin: 0px; }
+      .mainBodyWork__main__header {
+        padding: 0px 5% 0px 5%; }
       .mainBodyWork__main__holder {
-        justify-content: space-around; }
+        justify-content: space-around;
+        padding: 30px 5% 50px 5%; }
         .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
           width: 48.5%; }
     .mainBodyWork__reviews {
       width: 100%;
-      margin: 0px 0px 50px 0px; } }
+      padding: 0px 5% 0px 5%; }
+      .mainBodyWork__reviews__header {
+        margin-top: 20px; } }
 
 .footer {
   position: absolute;

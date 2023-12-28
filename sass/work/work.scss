@@ -107,7 +107,7 @@
         max-width: 1920px;
 
         &__header {
-            margin-top: 75px;
+            margin-top: 50px;
 
             h1 {
                 font-size: 1.75em;
@@ -124,7 +124,7 @@
 
         &__googleReviewGrid {
             width: 100%;
-            padding: 0px 10px 20px 10px;
+            padding: 0px 10px 30px 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -205,8 +205,14 @@
             width: 100%;
             margin: 0px;
 
+
+            &__header {
+                padding: 0px 5% 0px 5%;
+            }
+
             &__holder {
                 justify-content: space-around;
+                padding: 30px 5% 50px 5%;
 
                 &__row1,
                 &__row2,
@@ -219,7 +225,11 @@
 
         &__reviews {
             width: 100%;
-            margin: 0px 0px 50px 0px;
+            padding: 0px 5% 0px 5%;
+
+            &__header {
+                margin-top: 20px;
+            }
         }
     }
 
