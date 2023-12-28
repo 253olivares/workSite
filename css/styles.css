@@ -891,6 +891,30 @@ p {
       background-color: #f0f0f0;
       cursor: pointer; }
 
+@media only screen and (max-width: 930px) {
+  .mainBodyFeedback {
+    width: 100%; }
+    .mainBodyFeedback__feedbackTitle {
+      width: 100%;
+      margin: 50px 0px 0px 0px; }
+      .mainBodyFeedback__feedbackTitle h1 {
+        font-size: 1.625em; }
+      .mainBodyFeedback__feedbackTitle hr {
+        width: 325px; }
+    .mainBodyFeedback form {
+      width: 100%;
+      margin: 20px 0px 50px 0px; }
+      .mainBodyFeedback form h1 {
+        font-size: 1.125em; }
+      .mainBodyFeedback form P {
+        font-size: 1em; }
+    .mainBodyFeedback__inputComment textarea {
+      font-size: .875em; }
+    .mainBodyFeedback__submitClearButtons input[type=submit] {
+      font-size: .9375em; }
+    .mainBodyFeedback__submitClearButtons input[type=reset] {
+      font-size: .9375em; } }
+
 .mainBodyAboutUs {
   width: 100%;
   position: relative;
@@ -1199,6 +1223,20 @@ p {
       display: flex;
       justify-content: space-between;
       max-width: 1920px; }
+
+@media only screen and (max-width: 930px) {
+  .mainBodyWork {
+    width: 100%; }
+    .mainBodyWork__main {
+      width: 100%;
+      margin: 0px; }
+      .mainBodyWork__main__holder {
+        justify-content: space-around; }
+        .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
+          width: 48.5%; }
+    .mainBodyWork__reviews {
+      width: 100%;
+      margin: 0px 0px 50px 0px; } }
 
 .footer {
   position: absolute;

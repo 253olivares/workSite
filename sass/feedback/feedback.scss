@@ -232,5 +232,54 @@
 }
 
 @media only screen and (max-width:930px) {
-    .mainBodyFeedback {}
+    .mainBodyFeedback {
+        width: 100%;
+
+        &__feedbackTitle {
+            width: 100%;
+            margin: 50px 0px 0px 0px;
+
+            h1 {
+                font-size: 1.625em;
+            }
+
+            hr {
+                width: 325px;
+            }
+        }
+
+        form {
+            width: 100%;
+            margin: 20px 0px 50px 0px;
+
+            h1 {
+                font-size: 1.125em;
+            }
+
+            P {
+                font-size: 1em;
+            }
+        }
+
+        &__inputComment {
+            textarea {
+                font-size: .875em;
+            }
+        }
+
+        &__submitClearButtons {
+
+            input[type=submit] {
+                font-size: .9375em;
+
+                &:hover {}
+            }
+
+            input[type=reset] {
+                font-size: .9375em;
+
+                &:hover {}
+            }
+        }
+    }
 }
