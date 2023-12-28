@@ -3,15 +3,15 @@ var feedbackS, reviewS, workS = []
 let i;
 let slideIndex = 0;
 
-$.getJSON("../data/feedback.json", (feedback) => {
+$.getJSON("data/feedback.json", (feedback) => {
     feedbackS = feedback.userFeedback;
 })
 
-$.getJSON("../data/reviews.json", (review) => {
+$.getJSON("data/reviews.json", (review) => {
     reviewS = review.userReviews;
 })
 
-$.getJSON("../data/work.json", (work) => {
+$.getJSON("data/work.json", (work) => {
     workS = work.workStuff;
 })
 
@@ -130,12 +130,12 @@ let loadContent = (content) => {
             if (work.type == "Video") {
                 videoPhoto = `
                     <video class="videoS" controls>
-                     <source src="/images/Show/${work.videoSrc}" type="video/mp4">
+                     <source src="images/Show/${work.videoSrc}" type="video/mp4">
                     </video>
                 `
             } else if (work.type == "Photo") {
                 videoPhoto = `
-                <img src="/images/Show/${work.src}" alt="${work.name} Image">
+                <img src="images/Show/${work.src}" alt="${work.name} Image">
                 `
             }
 
@@ -157,7 +157,7 @@ let appendWork = () => {
         let displayWork = `
             <div class="mainBodyWork__main__holder__row${row}__workDone__entry en" onclick="loadContent(${work.id})">
                 <div class="mainBodyWork__main__holder__row${row}__workDone__entry__image">
-                    <img class="thumbnail" src="/images/Show/${work.src}" alt="${work.src}">
+                    <img class="thumbnail" src="images/Show/${work.src}" alt="${work.src}">
 
                 </div>
                 <div class="mainBodyWork__main__holder__row${row}__workDone__entry__description">
