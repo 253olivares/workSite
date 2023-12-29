@@ -368,7 +368,7 @@ p {
         font-size: 2.8125em;
         margin-bottom: 50px; }
       .mainBody__hero__info p {
-        width: 65%;
+        width: 70%;
         color: #fff;
         font-size: 1.1875em; }
   .mainBody__mobileInfo {
@@ -451,6 +451,60 @@ p {
       .mainBody__awards__listings__distingishedPartner:nth-child(2) img {
         transform: perspective(450px) rotateY(-8deg); }
 
+@media only screen and (max-width: 1650px) {
+  .mainBody__awards__listings h1 {
+    font-size: 1.875em; }
+  .mainBody__awards__listings p {
+    font-size: 1.5625em; }
+  .mainBody__awards__listings img {
+    width: 300px; } }
+
+@media only screen and (max-width: 1480px) {
+  .mainBody__hero__info h1 {
+    font-size: 2.5em; }
+  .mainBody__hero__info p {
+    font-size: 1em; }
+  .mainBody__asphalt {
+    margin: 40px auto 40px auto; }
+    .mainBody__asphalt__info h1 {
+      font-size: 1.4375em; }
+    .mainBody__asphalt__info hr {
+      width: 250px; }
+    .mainBody__asphalt__info p {
+      font-size: .875em; }
+    .mainBody__asphalt__image img {
+      width: 300px; }
+  .mainBody__awards {
+    min-width: 0px;
+    margin: 50px auto 25px auto; } }
+
+@media only screen and (max-width: 1350px) {
+  .mainBody__hero {
+    min-height: 550px; } }
+
+@media only screen and (max-width: 1280px) {
+  .mainBody__hero__info {
+    width: 92.5%; }
+  .mainBody__asphalt {
+    width: 92.5%; }
+  .mainBody__awards__listings {
+    width: 80%; } }
+
+@media only screen and (max-width: 1100px) {
+  .mainBody__hero {
+    min-height: 480px; }
+    .mainBody__hero__info h1 {
+      font-size: 2.25em;
+      margin-bottom: 20px; }
+    .mainBody__hero__info p {
+      font-size: .8em; }
+  .mainBody__awards__listings h1 {
+    font-size: 1.5625em; }
+  .mainBody__awards__listings p {
+    font-size: 1.25em; }
+  .mainBody__awards__listings img {
+    width: 275px; } }
+
 @media only screen and (max-width: 930px) {
   .mainBody__hero {
     min-height: 325px;
@@ -461,6 +515,7 @@ p {
       margin: 0px;
       padding: 0px; }
       .mainBody__hero__info h1 {
+        font-size: 2.40em;
         margin: 0px 5% 20px 5%; }
       .mainBody__hero__info p {
         display: none; }
@@ -468,7 +523,9 @@ p {
     display: block;
     width: 100%; }
     .mainBody__mobileInfo p {
-      padding: 25px 5% 0px 5%; }
+      font-size: 1.30em;
+      padding: 25px 5% 0px 5%;
+      letter-spacing: .5px; }
   .mainBody__asphalt {
     width: 100%;
     min-height: 0px;
@@ -480,7 +537,9 @@ p {
       width: 100%;
       padding: 0px; }
       .mainBody__asphalt__info p {
-        margin-top: 375px; }
+        margin-top: 375px;
+        font-size: 1.30em;
+        letter-spacing: .5px; }
       .mainBody__asphalt__info hr {
         width: 375px; }
     .mainBody__asphalt__image {
@@ -520,6 +579,207 @@ p {
           transform: none !important;
           width: 300px;
           margin-top: 30px; } }
+
+@media only screen and (max-width: 750px) {
+  .mainBody__hero {
+    min-height: 315px; }
+  .mainBody__mobileInfo p {
+    font-size: 1.20em; }
+  .mainBody__asphalt__info p {
+    font-size: 1.20em;
+    margin-top: 360px; }
+  .mainBody__asphalt__info hr {
+    width: 300px; }
+  .mainBody__asphalt__image img {
+    width: 400px; }
+  .mainBody__awards__listings h1 {
+    font-size: 1.75em; }
+  .mainBody__awards__listings p {
+    font-size: 1.25em; }
+  .mainBody__awards__listings__distingishedPartner img {
+    width: 275px; } }
+
+@media only screen and (max-width: 675px) {
+  .mainBody__hero {
+    min-height: 315px; }
+    .mainBody__hero__info h1 {
+      font-size: 2em; }
+  .mainBody__mobileInfo p {
+    font-size: 1.15em; }
+  .mainBody__asphalt__info p {
+    font-size: 1.15em;
+    margin-top: 360px; }
+  .mainBody__asphalt__info hr {
+    width: 300px; }
+  .mainBody__asphalt__image img {
+    width: 400px; }
+  .mainBody__awards__listings h1 {
+    font-size: 1.75em; }
+  .mainBody__awards__listings p {
+    font-size: 1.25em; }
+  .mainBody__awards__listings__distingishedPartner img {
+    width: 275px; } }
+
+@media only screen and (max-width: 550px) {
+  .mainBody__hero {
+    min-height: 300px; }
+    .mainBody__hero__info h1 {
+      font-size: 1.8em; }
+  .mainBody__mobileInfo p {
+    font-size: 1.1em; }
+  .mainBody__asphalt h1 {
+    text-align: center; }
+  .mainBody__asphalt__info p {
+    font-size: 1.1em;
+    margin-top: 360px; }
+  .mainBody__asphalt__info hr {
+    width: 300px;
+    margin: auto; }
+  .mainBody__asphalt__image img {
+    width: 375px; }
+  .mainBody__awards__listings h1 {
+    font-size: 1.75em; }
+  .mainBody__awards__listings p {
+    font-size: 1.25em; }
+  .mainBody__awards__listings__distingishedPartner img {
+    width: 275px; } }
+
+@media only screen and (max-width: 500px) {
+  .mainBody__awards h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    text-align: center; }
+  .mainBody__awards hr {
+    width: 325px; }
+  .mainBody__awards__listings h1 {
+    font-size: 1.3em; }
+  .mainBody__awards__listings p {
+    font-size: 1.1em; }
+  .mainBody__awards__listings__distingishedPartner img {
+    width: 260px; } }
+
+@media only screen and (max-width: 450px) {
+  .mainBody__hero {
+    min-height: 275px; }
+    .mainBody__hero__info h1 {
+      font-size: 1.5em; }
+  .mainBody__mobileInfo {
+    padding-left: 2.5%;
+    padding-right: 2.5%; }
+    .mainBody__mobileInfo p {
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px; }
+  .mainBody__asphalt {
+    padding: 30px 2.5% 30px 2.5%; }
+    .mainBody__asphalt__info p {
+      font-size: 1em;
+      margin-top: 250px; }
+    .mainBody__asphalt__info hr {
+      width: 300px;
+      margin: auto; }
+    .mainBody__asphalt__image img {
+      width: 250px; }
+  .mainBody__awards {
+    padding: 15px 2.5% 30px 2.5%; }
+    .mainBody__awards__listings {
+      margin: 10px auto 0px auto; }
+      .mainBody__awards__listings h1 {
+        font-size: 1.3em;
+        text-align: center; }
+      .mainBody__awards__listings p {
+        text-align: center;
+        font-size: .8em; }
+      .mainBody__awards__listings img {
+        width: 250px; } }
+
+@media only screen and (max-width: 350px) {
+  .mainBody__hero {
+    min-height: 225px; }
+    .mainBody__hero__info h1 {
+      margin: 0px 0px 20px 0px;
+      padding: 0px 2.5% 0px 2.5%;
+      font-size: 1.2em; }
+  .mainBody__mobileInfo {
+    padding-left: 2.5%;
+    padding-right: 2.5%; }
+    .mainBody__mobileInfo p {
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px; }
+  .mainBody__asphalt {
+    padding: 15px 2.5% 15px 2.5%; }
+    .mainBody__asphalt__info p {
+      font-size: 1em;
+      margin-top: 250px; }
+    .mainBody__asphalt__info hr {
+      width: 250px;
+      margin: auto; }
+    .mainBody__asphalt__image img {
+      margin-top: 75px;
+      width: 250px; }
+  .mainBody__awards {
+    padding: 15px 2.5% 30px 2.5%; }
+    .mainBody__awards hr {
+      width: 275px; }
+    .mainBody__awards__listings {
+      margin: 10px auto 0px auto; }
+      .mainBody__awards__listings h1 {
+        font-size: 1.1em; }
+      .mainBody__awards__listings p {
+        font-size: 1em;
+        margin-bottom: 5px; }
+      .mainBody__awards__listings img {
+        width: 250px;
+        margin-top: 8px; }
+      .mainBody__awards__listings__distingishedPartner {
+        width: 100%;
+        margin-top: 10px; } }
+
+@media only screen and (max-width: 300px) {
+  .mainBody__hero {
+    min-height: 200px; }
+    .mainBody__hero__info h1 {
+      margin: 0px 0px 20px 0px;
+      padding: 0px 2.5% 0px 2.5%;
+      font-size: 1.1em; }
+  .mainBody__mobileInfo {
+    padding-left: 2.5%;
+    padding-right: 2.5%; }
+    .mainBody__mobileInfo p {
+      font-size: 1em;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px; }
+  .mainBody__asphalt {
+    padding: 15px 2.5% 15px 2.5%; }
+    .mainBody__asphalt__info p {
+      font-size: 1em;
+      margin-top: 225px; }
+    .mainBody__asphalt__info hr {
+      width: 250px;
+      margin: auto; }
+    .mainBody__asphalt__image img {
+      margin-top: 75px;
+      width: 230px; }
+  .mainBody__awards {
+    padding: 15px 2.5% 30px 2.5%; }
+    .mainBody__awards hr {
+      width: 275px; }
+    .mainBody__awards__listings {
+      margin: 10px auto 0px auto; }
+      .mainBody__awards__listings h1 {
+        font-size: 1.1em; }
+      .mainBody__awards__listings p {
+        font-size: 1em;
+        margin-bottom: 5px; }
+      .mainBody__awards__listings img {
+        width: 230px;
+        margin-top: 8px; }
+      .mainBody__awards__listings__distingishedPartner {
+        width: 100%;
+        margin-top: 10px; } }
 
 .mainBodyContact {
   width: 100%;
