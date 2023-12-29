@@ -92,7 +92,7 @@
     &__nav {
         width: 100%;
         background-color: $green;
-        font-size: 17px;
+        font-size: 1em;
 
         &__holder {
             color: $white;
@@ -167,6 +167,201 @@
     transition: top .8s ease-in-out;
 }
 
+@media only screen and (max-width: 1650px) {
+    .header {
+        &__phoneStrip {
+            &__holder {
+                &__info {
+                    font-size: .9em;
+                }
+            }
+        }
+
+        &__logoCompany {
+            &__holder {
+                &__imageText {
+                    img {
+                        width: 90px;
+                        margin-right: 18px;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                    }
+
+                }
+            }
+        }
+
+        &__nav {
+            &__holder {
+                ul {
+                    span {
+                        font-size: 1.4em;
+                    }
+
+                    a {
+                        font-size: 1em;
+                        line-height: 1;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .header {
+        &__phoneStrip {
+            &__holder {
+                &__info {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    font-size: .9em;
+                }
+            }
+        }
+
+        &__logoCompany {
+            &__holder {
+                &__imageText {
+                    img {
+                        width: 90px;
+                        margin-right: 18px;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                    }
+
+                }
+            }
+        }
+
+        &__nav {
+            &__holder {
+                ul {
+                    span {
+                        font-size: 1.4em;
+                    }
+
+                    a {
+                        font-size: 1em;
+                        line-height: 1;
+                        vertical-align: middle;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .header {
+        &__phoneStrip {
+            &__holder {
+                width: 92.5%;
+
+                &__info {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        &__logoCompany {
+            &__holder {
+                width: 92.5%;
+
+                &__imageText {
+                    img {
+                        width: 75px;
+                        margin-right: 18px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+
+                }
+            }
+        }
+
+        &__nav {
+            &__holder {
+                width: 92.5%;
+
+                ul {
+                    span {
+                        font-size: 1em;
+                    }
+
+                    a {
+                        font-size: .8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header {
+        &__phoneStrip {
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+            &__holder {
+                width: 92.5%;
+
+                &__info {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        &__logoCompany {
+            padding-top: 13px;
+            padding-bottom: 13px;
+
+            &__holder {
+                width: 92.5%;
+
+                &__imageText {
+                    img {
+                        width: 75px;
+                        margin-right: 18px;
+                    }
+
+                    p {
+                        font-size: 1em;
+                    }
+
+                }
+            }
+        }
+
+        &__nav {
+            &__holder {
+                width: 92.5%;
+
+                ul {
+                    span {
+                        font-size: 1em;
+                    }
+
+                    a {
+                        font-size: .8em;
+                        padding: 8px 15px 9px 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 930px) {
     .header {
         padding: 15px 0px 15px 0px;
@@ -193,7 +388,7 @@
             button {
                 color: $gray;
                 position: absolute;
-                width: 60px;
+                width: 40px;
                 height: 50px;
                 padding: 0px;
                 margin-left: 2.5%;
@@ -303,6 +498,109 @@
                     margin-bottom: 0px;
                     line-height: 28px;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        &__mobile {
+            button {}
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .mobNav {}
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        &__mobile {
+            button {
+                height: 30px;
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    color: $gray;
+                    width: 32.5px;
+                }
+            }
+
+            h1 {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {}
+
+@media only screen and (max-width: 500px) {}
+
+@media only screen and (max-width: 450px) {}
+
+@media only screen and (max-width: 400px) {
+    .header {
+        &__mobile {
+            button {
+                height: 25px;
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    color: $gray;
+                    width: 28.5px;
+                }
+            }
+
+            h1 {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .header {
+        &__mobile {
+            button {
+                height: 25px;
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    color: $gray;
+                    width: 28.5px;
+                }
+            }
+
+            h1 {
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .header {
+        &__mobile {
+            button {
+
+                .hamburger-inner,
+                .hamburger-inner::before,
+                .hamburger-inner::after {
+                    color: $gray;
+                    width: 28.5px;
+                }
+            }
+
+            h1 {
+                font-size: .8em;
             }
         }
     }
