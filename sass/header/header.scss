@@ -445,7 +445,7 @@
                         content: ">";
                         position: absolute;
                         right: 20px;
-                        font-size: 14px;
+                        font-size: 1.1667em;
                     }
                 }
 
@@ -581,6 +581,48 @@
 
             h1 {
                 font-size: .9em;
+            }
+        }
+    }
+
+    .mobNav {
+        &__welcome {
+            h1 {
+                padding: 10px 0px 10px 2.5%;
+                font-size: 1.25em;
+            }
+        }
+
+        &__options {
+            ul {
+                a {
+                    margin: 8px 0px 8px 2.5%;
+                    font-size: 1em;
+
+                    &::after {
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+
+        &__footers {
+            a {
+                img {}
+            }
+
+            &__company {
+                img {
+                    width: 50px;
+                    height: 24px;
+                }
+
+                h1 {
+                    font-size: .85em;
+                    margin-left: 15px;
+                    margin-bottom: 0px;
+                    line-height: 28px;
+                }
             }
         }
     }

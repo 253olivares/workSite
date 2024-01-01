@@ -80,6 +80,61 @@
     }
 }
 
+@media only screen and (max-width: 1600px) {
+    .footer {
+        &__holder {
+            &__top {
+                img {}
+
+                p {
+                    &:hover {}
+                }
+            }
+
+            &__hr {}
+
+            &__bottom {
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer {
+        &__holder {
+            &__top {
+                img {}
+
+                p {
+                    &:hover {}
+                }
+            }
+
+            &__hr {}
+
+            &__bottom {
+                min-height: 40px;
+
+                &__holderForLogoName {
+                    img {
+                        width: 70px;
+                        margin-right: 17.5px;
+                    }
+
+                    p {
+                        font-size: .95em;
+                    }
+                }
+
+                &__copyrightInformation {
+                    font-size: .75em;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 930px) {
     .footer {
         &__holder {
@@ -125,6 +180,68 @@
 
                 &__copyrightInformation {
                     margin-top: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        &__holder {
+            &__top {
+                &__socials {}
+            }
+
+            &__bottom {
+                &__holderForLogoName {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    p {
+                        font-size: .9em;
+                    }
+                }
+
+                &__mobilehr {}
+
+                &__copyrightInformation {}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .footer {
+        &__holder {
+            &__top {
+                &__socials {}
+            }
+
+            &__bottom {
+                &__holderForLogoName {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                    }
+
+                    p {
+                        font-size: .9em;
+                    }
+                }
+
+                &__mobilehr {}
+
+                &__copyrightInformation {
+                    text-align: center;
                 }
             }
         }

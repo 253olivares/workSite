@@ -360,7 +360,7 @@ p {
             content: ">";
             position: absolute;
             right: 20px;
-            font-size: 14px; }
+            font-size: 1.1667em; }
         .mobNav__options ul hr {
           height: 4px;
           background-color: #309C49;
@@ -431,7 +431,23 @@ p {
       color: #707070;
       width: 28.5px; }
   .header__mobile h1 {
-    font-size: .9em; } }
+    font-size: .9em; }
+  .mobNav__welcome h1 {
+    padding: 10px 0px 10px 2.5%;
+    font-size: 1.25em; }
+  .mobNav__options ul a {
+    margin: 8px 0px 8px 2.5%;
+    font-size: 1em; }
+    .mobNav__options ul a::after {
+      font-size: 1.1em; }
+  .mobNav__footers__company img {
+    width: 50px;
+    height: 24px; }
+  .mobNav__footers__company h1 {
+    font-size: .85em;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    line-height: 28px; } }
 
 @media only screen and (max-width: 280px) {
   .header__mobile button .hamburger-inner,
@@ -1690,6 +1706,21 @@ p {
         align-items: center;
         margin-bottom: 0px; }
 
+@media only screen and (max-width: 1600px) {
+  .footer__holder__bottom {
+    min-height: 60px; } }
+
+@media only screen and (max-width: 1280px) {
+  .footer__holder__bottom {
+    min-height: 40px; }
+    .footer__holder__bottom__holderForLogoName img {
+      width: 70px;
+      margin-right: 17.5px; }
+    .footer__holder__bottom__holderForLogoName p {
+      font-size: .95em; }
+    .footer__holder__bottom__copyrightInformation {
+      font-size: .75em; } }
+
 @media only screen and (max-width: 930px) {
   .footer__holder {
     width: 100%; }
@@ -1720,3 +1751,25 @@ p {
         width: 100%; }
       .footer__holder__bottom__copyrightInformation {
         margin-top: 13px; } }
+
+@media only screen and (max-width: 700px) {
+  .footer__holder__bottom__holderForLogoName {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__holder__bottom__holderForLogoName img {
+      width: 50px; }
+    .footer__holder__bottom__holderForLogoName p {
+      font-size: .9em; } }
+
+@media only screen and (max-width: 450px) {
+  .footer__holder__bottom__holderForLogoName {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__holder__bottom__holderForLogoName img {
+      width: 50px; }
+    .footer__holder__bottom__holderForLogoName p {
+      font-size: .9em; }
+  .footer__holder__bottom__copyrightInformation {
+    text-align: center; } }
