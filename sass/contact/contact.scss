@@ -38,7 +38,8 @@
         padding-top: 70px;
         max-width: 1920px;
 
-        &__poBox {
+        &__poBox,
+        &__address {
             padding: 19px 83px 19px 83px;
             display: flex;
             flex-direction: column;
@@ -53,26 +54,6 @@
 
             &:hover {
                 transform: scale(1.05);
-                border: $green 3px solid;
-                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            }
-        }
-
-        &__address {
-            text-align: center;
-            padding: 19px 83px 19px 83px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: $gray 2px solid;
-            transition: all .8s ease-in-out;
-
-            img {
-                margin-bottom: 10px;
-            }
-
-            &:hover {
-                transform: scale(1.04);
                 border: $green 3px solid;
                 box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
             }
@@ -104,7 +85,7 @@
             &__split {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
 
                 &__top {
                     display: flex;
@@ -182,12 +163,12 @@
 
                         h1 {
                             margin-bottom: 0px;
-                            font-size: 24px;
+                            font-size: 1.5em;
                         }
 
                         p {
                             margin-bottom: 0px;
-                            font-size: 18px;
+                            font-size: 1.125em;
                         }
                     }
 
@@ -211,6 +192,233 @@
         }
     }
 }
+
+@media only screen and (max-width: 1600px) {
+    .mainBodyContact {
+        &__contactTitle {
+            width: 80%;
+        }
+
+        &__mailAddy {
+            width: 80%;
+        }
+
+        &__phoneFax {
+            width: 55%;
+        }
+
+        &__emails {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .mainBodyContact {
+        &__contactTitle {
+            width: 80%;
+        }
+
+        &__mailAddy {
+            width: 80%;
+
+            &__poBox,
+            &__address {
+                padding: 17.5px 81px 17.5px 81px;
+
+                img {
+                    width: 80px;
+                }
+
+                h1 {
+                    font-size: 1.75em;
+                }
+
+                p {
+                    font-size: .95em;
+                }
+            }
+        }
+
+        &__phoneFax {
+            width: 65%;
+            padding-bottom: 55px;
+
+            &__info {
+                padding: 20px;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                &__split {
+
+                    &__top,
+                    &__bottom {
+                        h1 {
+                            font-size: 1.2em;
+                        }
+
+                        p {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__emails {
+            width: 80%;
+            padding-bottom: 100px;
+
+            &__info {
+                h1 {
+                    font-size: 1.75em;
+                }
+
+                hr {}
+
+                &__table {
+                    &__row {
+                        &__columnName {
+                            h1 {
+                                font-size: 1.3em;
+                            }
+
+                            p {
+                                font-size: 1.115em;
+                            }
+                        }
+
+                        &__emails {
+                            p {
+                                font-size: 1.15em;
+                            }
+                        }
+
+                        &:nth-child(even) {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mainBodyContact {
+        &__contactTitle {
+            width: 92.5%;
+        }
+
+        &__mailAddy {
+            width: 92.5%;
+        }
+
+        &__phoneFax {
+            width: 75%;
+        }
+
+        &__emails {
+            width: 92.5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .mainBodyContact {
+        &__contactTitle {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            hr {
+                width: 190px;
+            }
+
+            p {}
+        }
+
+        &__mailAddy {
+            justify-content: space-around;
+            min-width: 0px;
+
+            &__poBox,
+            &__address {
+                img {
+                    width: 70px;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        &__phoneFax {
+            &__info {
+                padding: 20px;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+
+                &__split {
+
+                    &__top,
+                    &__bottom {
+                        h1 {
+                            font-size: 1em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__emails {
+            padding-bottom: 70px;
+
+            &__info {
+                h1 {
+                    font-size: 1.60em;
+                }
+
+                &__table {
+                    &__row {
+                        &__columnName {
+                            h1 {
+                                font-size: 1.15em;
+                            }
+
+                            p {
+                                font-size: 1.05em;
+                            }
+                        }
+
+                        &__emails {
+
+                            p {
+                                font-size: 1.05em;
+                            }
+                        }
+
+                        &:nth-child(even) {}
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 930px) {
     .mainBodyContact {
@@ -328,6 +536,221 @@
                         &__emails {
                             p {
                                 font-size: 1.125em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .mainBodyContact {
+        &__contactTitle {
+            margin: 30px 2.5% 0px 2.5%;
+        }
+
+        &__mailAddy {
+            padding-top: 40px;
+
+            &__poBox,
+            &__address {
+                width: 400px;
+
+                img {
+                    width: 55px;
+                }
+
+                h1 {
+                    font-size: 1.25em;
+                }
+
+                p {
+                    font-size: .7em;
+                }
+            }
+        }
+
+        &__phoneFax {
+            width: 400px;
+
+            &__info {
+                img {
+                    width: 55px;
+                    height: 55px;
+                }
+
+                &__split {
+
+                    &__top,
+                    &__bottom {
+                        h1 {
+
+                            font-size: 1.25em;
+                        }
+
+                        p {
+                            font-size: .7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__emails {
+            min-width: 0px;
+
+            &__info {
+
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                &__table {
+                    &__row {
+                        height: 65px;
+
+                        &__columnName {
+                            h1 {
+                                font-size: 1.2em;
+                            }
+
+                            p {
+                                font-size: 1em;
+                            }
+                        }
+
+                        &__emails {
+                            p {
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainBodyContact {
+        &__contactTitle {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            hr {
+                width: 175px;
+            }
+        }
+
+        &__mailAddy {
+            width: 100%;
+
+            &__poBox,
+            &__address {
+                width: auto;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+            }
+        }
+
+        &__phoneFax {
+            width: auto;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        &__emails {
+            &__info {
+                margin: 0px 2.5% 0px 2.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainBodyContact {
+        &__contactTitle {}
+
+        &__mailAddy {
+
+            &__poBox,
+            &__address {
+                margin-bottom: 50px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                img,
+                h1,
+                p {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+        &__phoneFax {}
+
+        &__emails {
+            &__info {
+
+                h1 {
+                    font-size: 1.25em;
+                }
+
+                &__table {
+                    &__row {
+                        height: 55px;
+
+                        &__columnName {
+                            h1 {
+                                font-size: 1em;
+                            }
+
+                            p {
+                                font-size: .9em;
+                            }
+                        }
+
+                        &__emails {
+                            p {
+                                font-size: .9em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mainBodyContact {
+        &__emails {
+            &__info {
+
+                h1 {
+                    font-size: 1.20em;
+                }
+
+                &__table {
+                    &__row {
+                        height: 55px;
+
+                        &__columnName {
+                            h1 {
+                                font-size: .9em;
+                            }
+
+                            p {
+                                font-size: .8em;
+                            }
+                        }
+
+                        &__emails {
+                            p {
+                                font-size: .8em;
                             }
                         }
                     }

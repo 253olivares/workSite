@@ -955,7 +955,7 @@ p {
     margin: auto;
     padding-top: 70px;
     max-width: 1920px; }
-    .mainBodyContact__mailAddy__poBox {
+    .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
       padding: 19px 83px 19px 83px;
       display: flex;
       flex-direction: column;
@@ -963,24 +963,10 @@ p {
       border: #707070 3px solid;
       text-align: center;
       transition: all .8s ease-in-out; }
-      .mainBodyContact__mailAddy__poBox img {
+      .mainBodyContact__mailAddy__poBox img, .mainBodyContact__mailAddy__address img {
         margin-bottom: 10px; }
-      .mainBodyContact__mailAddy__poBox:hover {
+      .mainBodyContact__mailAddy__poBox:hover, .mainBodyContact__mailAddy__address:hover {
         transform: scale(1.05);
-        border: #309C49 3px solid;
-        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
-    .mainBodyContact__mailAddy__address {
-      text-align: center;
-      padding: 19px 83px 19px 83px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: #707070 2px solid;
-      transition: all .8s ease-in-out; }
-      .mainBodyContact__mailAddy__address img {
-        margin-bottom: 10px; }
-      .mainBodyContact__mailAddy__address:hover {
-        transform: scale(1.04);
         border: #309C49 3px solid;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
   .mainBodyContact__phoneFax {
@@ -1004,7 +990,7 @@ p {
       .mainBodyContact__phoneFax__info__split {
         display: flex;
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: space-around; }
         .mainBodyContact__phoneFax__info__split__top {
           display: flex;
           align-items: center; }
@@ -1053,10 +1039,10 @@ p {
         justify-content: space-between; }
         .mainBodyContact__emails__info__table__row__columnName h1 {
           margin-bottom: 0px;
-          font-size: 24px; }
+          font-size: 1.5em; }
         .mainBodyContact__emails__info__table__row__columnName p {
           margin-bottom: 0px;
-          font-size: 18px; }
+          font-size: 1.125em; }
       .mainBodyContact__emails__info__table__row__emails {
         display: flex;
         align-items: flex-end;
@@ -1067,6 +1053,97 @@ p {
           font-size: 20px; }
     .mainBodyContact__emails__info__table__row:nth-child(even) {
       background-color: #fff; }
+
+@media only screen and (max-width: 1600px) {
+  .mainBodyContact__contactTitle {
+    width: 80%; }
+  .mainBodyContact__mailAddy {
+    width: 80%; }
+  .mainBodyContact__phoneFax {
+    width: 55%; }
+  .mainBodyContact__emails {
+    width: 80%; } }
+
+@media only screen and (max-width: 1450px) {
+  .mainBodyContact__contactTitle {
+    width: 80%; }
+  .mainBodyContact__mailAddy {
+    width: 80%; }
+    .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
+      padding: 17.5px 81px 17.5px 81px; }
+      .mainBodyContact__mailAddy__poBox img, .mainBodyContact__mailAddy__address img {
+        width: 80px; }
+      .mainBodyContact__mailAddy__poBox h1, .mainBodyContact__mailAddy__address h1 {
+        font-size: 1.75em; }
+      .mainBodyContact__mailAddy__poBox p, .mainBodyContact__mailAddy__address p {
+        font-size: .95em; }
+  .mainBodyContact__phoneFax {
+    width: 65%;
+    padding-bottom: 55px; }
+    .mainBodyContact__phoneFax__info {
+      padding: 20px; }
+      .mainBodyContact__phoneFax__info img {
+        width: 80px;
+        height: 80px; }
+      .mainBodyContact__phoneFax__info__split__top h1, .mainBodyContact__phoneFax__info__split__bottom h1 {
+        font-size: 1.2em; }
+      .mainBodyContact__phoneFax__info__split__top p, .mainBodyContact__phoneFax__info__split__bottom p {
+        font-size: 1.2em; }
+  .mainBodyContact__emails {
+    width: 80%;
+    padding-bottom: 100px; }
+    .mainBodyContact__emails__info h1 {
+      font-size: 1.75em; }
+    .mainBodyContact__emails__info__table__row__columnName h1 {
+      font-size: 1.3em; }
+    .mainBodyContact__emails__info__table__row__columnName p {
+      font-size: 1.115em; }
+    .mainBodyContact__emails__info__table__row__emails p {
+      font-size: 1.15em; } }
+
+@media only screen and (max-width: 1280px) {
+  .mainBodyContact__contactTitle {
+    width: 92.5%; }
+  .mainBodyContact__mailAddy {
+    width: 92.5%; }
+  .mainBodyContact__phoneFax {
+    width: 75%; }
+  .mainBodyContact__emails {
+    width: 92.5%; } }
+
+@media only screen and (max-width: 1175px) {
+  .mainBodyContact__contactTitle h1 {
+    font-size: 1.5em; }
+  .mainBodyContact__contactTitle hr {
+    width: 190px; }
+  .mainBodyContact__mailAddy {
+    justify-content: space-around;
+    min-width: 0px; }
+    .mainBodyContact__mailAddy__poBox img, .mainBodyContact__mailAddy__address img {
+      width: 70px; }
+    .mainBodyContact__mailAddy__poBox h1, .mainBodyContact__mailAddy__address h1 {
+      font-size: 1.5em; }
+    .mainBodyContact__mailAddy__poBox p, .mainBodyContact__mailAddy__address p {
+      font-size: .8em; }
+  .mainBodyContact__phoneFax__info {
+    padding: 20px; }
+    .mainBodyContact__phoneFax__info img {
+      width: 70px;
+      height: 70px; }
+    .mainBodyContact__phoneFax__info__split__top h1, .mainBodyContact__phoneFax__info__split__bottom h1 {
+      font-size: 1em; }
+    .mainBodyContact__phoneFax__info__split__top p, .mainBodyContact__phoneFax__info__split__bottom p {
+      font-size: 1em; }
+  .mainBodyContact__emails {
+    padding-bottom: 70px; }
+    .mainBodyContact__emails__info h1 {
+      font-size: 1.60em; }
+    .mainBodyContact__emails__info__table__row__columnName h1 {
+      font-size: 1.15em; }
+    .mainBodyContact__emails__info__table__row__columnName p {
+      font-size: 1.05em; }
+    .mainBodyContact__emails__info__table__row__emails p {
+      font-size: 1.05em; } }
 
 @media only screen and (max-width: 930px) {
   .mainBodyContact {
@@ -1136,6 +1213,93 @@ p {
           font-size: 1em; }
         .mainBodyContact__emails__info__table__row__emails p {
           font-size: 1.125em; } }
+
+@media only screen and (max-width: 700px) {
+  .mainBodyContact__contactTitle {
+    margin: 30px 2.5% 0px 2.5%; }
+  .mainBodyContact__mailAddy {
+    padding-top: 40px; }
+    .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
+      width: 400px; }
+      .mainBodyContact__mailAddy__poBox img, .mainBodyContact__mailAddy__address img {
+        width: 55px; }
+      .mainBodyContact__mailAddy__poBox h1, .mainBodyContact__mailAddy__address h1 {
+        font-size: 1.25em; }
+      .mainBodyContact__mailAddy__poBox p, .mainBodyContact__mailAddy__address p {
+        font-size: .7em; }
+  .mainBodyContact__phoneFax {
+    width: 400px; }
+    .mainBodyContact__phoneFax__info img {
+      width: 55px;
+      height: 55px; }
+    .mainBodyContact__phoneFax__info__split__top h1, .mainBodyContact__phoneFax__info__split__bottom h1 {
+      font-size: 1.25em; }
+    .mainBodyContact__phoneFax__info__split__top p, .mainBodyContact__phoneFax__info__split__bottom p {
+      font-size: .7em; }
+  .mainBodyContact__emails {
+    min-width: 0px; }
+    .mainBodyContact__emails__info h1 {
+      font-size: 1.5em; }
+    .mainBodyContact__emails__info__table__row {
+      height: 65px; }
+      .mainBodyContact__emails__info__table__row__columnName h1 {
+        font-size: 1.2em; }
+      .mainBodyContact__emails__info__table__row__columnName p {
+        font-size: 1em; }
+      .mainBodyContact__emails__info__table__row__emails p {
+        font-size: 1em; } }
+
+@media only screen and (max-width: 500px) {
+  .mainBodyContact__contactTitle h1 {
+    font-size: 1.5em; }
+  .mainBodyContact__contactTitle hr {
+    width: 175px; }
+  .mainBodyContact__mailAddy {
+    width: 100%; }
+    .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
+      width: auto;
+      margin-left: 2.5%;
+      margin-right: 2.5%; }
+  .mainBodyContact__phoneFax {
+    width: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+  .mainBodyContact__emails__info {
+    margin: 0px 2.5% 0px 2.5%; } }
+
+@media only screen and (max-width: 400px) {
+  .mainBodyContact__mailAddy__poBox, .mainBodyContact__mailAddy__address {
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .mainBodyContact__mailAddy__poBox img,
+    .mainBodyContact__mailAddy__poBox h1,
+    .mainBodyContact__mailAddy__poBox p, .mainBodyContact__mailAddy__address img,
+    .mainBodyContact__mailAddy__address h1,
+    .mainBodyContact__mailAddy__address p {
+      margin-bottom: 8px; }
+  .mainBodyContact__emails__info h1 {
+    font-size: 1.25em; }
+  .mainBodyContact__emails__info__table__row {
+    height: 55px; }
+    .mainBodyContact__emails__info__table__row__columnName h1 {
+      font-size: 1em; }
+    .mainBodyContact__emails__info__table__row__columnName p {
+      font-size: .9em; }
+    .mainBodyContact__emails__info__table__row__emails p {
+      font-size: .9em; } }
+
+@media only screen and (max-width: 350px) {
+  .mainBodyContact__emails__info h1 {
+    font-size: 1.20em; }
+  .mainBodyContact__emails__info__table__row {
+    height: 55px; }
+    .mainBodyContact__emails__info__table__row__columnName h1 {
+      font-size: .9em; }
+    .mainBodyContact__emails__info__table__row__columnName p {
+      font-size: .8em; }
+    .mainBodyContact__emails__info__table__row__emails p {
+      font-size: .8em; } }
 
 .mainBodyFeedback {
   width: 100%;
