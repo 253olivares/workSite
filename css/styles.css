@@ -1344,7 +1344,8 @@ p {
       height: 3px; }
   .mainBodyFeedback form {
     width: 85%;
-    margin: 20px auto 50px auto; }
+    margin: 20px auto 50px auto;
+    max-width: 1920px; }
     .mainBodyFeedback form h1 {
       font-size: 1.4em; }
     .mainBodyFeedback form p {
@@ -2153,6 +2154,8 @@ p {
     padding-right: 0px; }
     .mainBodyWork__reviews__googleReviewGrid__individualReview {
       width: 100%; }
+      .mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore h2 {
+        margin-right: 10px; }
   .mainBodyWork__reviews button {
     width: 100%; }
   .mainBodyWork__reviews__button {

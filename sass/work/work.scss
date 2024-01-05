@@ -813,7 +813,9 @@
                     width: 100%;
 
                     &__nameScore {
-                        h2 {}
+                        h2 {
+                            margin-right: 10px;
+                        }
 
                         .checked {}
 
@@ -851,7 +853,13 @@
         &__reviews {
             &__header {}
 
-            &__googleReviewGrid {}
+            &__googleReviewGrid {
+                &__individualReview {
+                    &__nameScore {
+                        h2 {}
+                    }
+                }
+            }
 
             button {}
 
