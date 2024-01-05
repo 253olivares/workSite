@@ -84,11 +84,12 @@ p {
       cursor: pointer; }
   .modal video {
     border-radius: 5px 5px 0px 0px;
-    width: 800px; }
+    width: 100%; }
   .modal img {
     display: block;
     margin: auto;
-    width: 335px; }
+    width: 100%;
+    max-width: 335px; }
   .modal__information {
     display: flex;
     color: #707070;
@@ -101,6 +102,26 @@ p {
     .modal__information p {
       margin-bottom: 0px;
       font-size: 1.2em; }
+
+@media only screen and (max-width: 1280px) {
+  .modal__displayContent {
+    width: 650px; } }
+
+@media only screen and (max-width: 700px) {
+  .modal__displayContent {
+    width: 500px; } }
+
+@media only screen and (max-width: 500px) {
+  .modal__displayContent {
+    width: 100%; }
+  .modal img {
+    max-width: 225px; }
+  .modal__information {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .modal__information h1,
+    .modal__information p {
+      font-size: .85em; } }
 
 .header {
   width: 100%;
@@ -1555,7 +1576,7 @@ p {
       align-items: center;
       margin-bottom: 150px; }
       .mainBodyAboutUs__content__businessJournal__info {
-        width: 45%; }
+        width: 50%; }
         .mainBodyAboutUs__content__businessJournal__info h1 {
           width: 100%;
           font-weight: bold;
@@ -1611,6 +1632,72 @@ p {
         margin-right: 15%;
         border-radius: 10px; }
 
+@media only screen and (max-width: 1550px) {
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    margin-right: 5%; }
+  .mainBodyAboutUs__content__businessJournal img {
+    margin-right: 5%; } }
+
+@media only screen and (max-width: 1400px) {
+  .mainBodyAboutUs__content__fundamentalBelief {
+    margin-bottom: 100px; }
+  .mainBodyAboutUs__content__businessJournal {
+    margin-bottom: 100px; } }
+
+@media only screen and (max-width: 1325px) {
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    margin-right: 2.5%; }
+  .mainBodyAboutUs__content__businessJournal img {
+    margin-right: 2.5%; } }
+
+@media only screen and (max-width: 1280px) {
+  .mainBodyAboutUs__hero {
+    height: 575px; }
+  .mainBodyAboutUs__content {
+    width: 92.5%; }
+    .mainBodyAboutUs__content__aboutCompany__header h1 {
+      font-size: 1.65em; }
+    .mainBodyAboutUs__content__aboutCompany__info p {
+      font-size: 1.1em; }
+    .mainBodyAboutUs__content__aboutCompany__info img {
+      width: 400px;
+      margin-right: 7.5%; }
+    .mainBodyAboutUs__content__fundamentalBelief h1 {
+      font-size: 1.65em; }
+    .mainBodyAboutUs__content__fundamentalBelief p {
+      font-size: 1.30em; }
+    .mainBodyAboutUs__content__businessJournal__info h1 {
+      font-size: 1.65em; }
+    .mainBodyAboutUs__content__businessJournal img {
+      width: 300px;
+      margin-right: 7.5%; } }
+
+@media only screen and (max-width: 1150px) {
+  .mainBodyAboutUs__content__aboutCompany__header h1 {
+    font-size: 1.5em; }
+  .mainBodyAboutUs__content__aboutCompany__header hr {
+    width: 275px; }
+  .mainBodyAboutUs__content__aboutCompany__info p {
+    font-size: 1em; }
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    margin-right: 2.5%; }
+  .mainBodyAboutUs__content__fundamentalBelief h1 {
+    font-size: 1.5em; }
+  .mainBodyAboutUs__content__fundamentalBelief hr {
+    width: 375px; }
+  .mainBodyAboutUs__content__fundamentalBelief p {
+    font-size: 1.2em; }
+  .mainBodyAboutUs__content__businessJournal__info h1 {
+    font-size: 1.5em; }
+  .mainBodyAboutUs__content__businessJournal img {
+    margin-right: 2.5%; } }
+
+@media only screen and (max-width: 1075px) {
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    width: 375px; }
+  .mainBodyAboutUs__content__businessJournal img {
+    width: 275px; } }
+
 @media only screen and (max-width: 930px) {
   .mainBodyAboutUs__hero {
     height: 425px; }
@@ -1635,32 +1722,125 @@ p {
         .mainBodyAboutUs__content__aboutCompany__info img {
           margin: 35px 0px 0px 0px; }
     .mainBodyAboutUs__content__fundamentalBelief {
-      margin-bottom: 85px; }
+      margin-bottom: 75px;
+      width: 100%; }
       .mainBodyAboutUs__content__fundamentalBelief h1 {
         font-size: 1.25em; }
       .mainBodyAboutUs__content__fundamentalBelief hr {
         width: 300px; }
       .mainBodyAboutUs__content__fundamentalBelief p {
-        width: 700px;
-        font-size: 1.125em; }
+        width: auto;
+        font-size: 1.125em;
+        margin-left: 2.5%;
+        margin-right: 2.5%; }
     .mainBodyAboutUs__content__businessJournal {
       display: flex;
       flex-direction: column;
-      margin-bottom: 100px;
+      margin-bottom: 75px;
       width: 100%; }
       .mainBodyAboutUs__content__businessJournal__info {
         margin: 0px 5% 0px 5%;
-        width: auto; }
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
         .mainBodyAboutUs__content__businessJournal__info h1 {
           font-size: 1.25em; }
         .mainBodyAboutUs__content__businessJournal__info hr {
           width: 500px; }
         .mainBodyAboutUs__content__businessJournal__info__firstText, .mainBodyAboutUs__content__businessJournal__info__downloadText {
           font-size: .9375em; }
+        .mainBodyAboutUs__content__businessJournal__info a {
+          margin-left: auto;
+          margin-right: auto;
+          width: 350px;
+          text-align: center; }
       .mainBodyAboutUs__content__businessJournal img {
         width: 325px;
         margin-top: 50px;
         margin-right: 0px; } }
+
+@media only screen and (max-width: 750px) {
+  .mainBodyAboutUs__content__imgCaption {
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+  .mainBodyAboutUs__content__aboutCompany {
+    margin: 0px 2.5% 0px 2.5%; }
+  .mainBodyAboutUs__content__businessJournal__info {
+    margin: 0px 2.5% 0px 2.5%; } }
+
+@media only screen and (max-width: 650px) {
+  .mainBodyAboutUs__hero {
+    height: 380px; }
+  .mainBodyAboutUs__content {
+    width: 100%; }
+    .mainBodyAboutUs__content__aboutCompany h1 {
+      font-size: 1.15em; }
+    .mainBodyAboutUs__content__aboutCompany hr {
+      width: 220px; }
+    .mainBodyAboutUs__content__aboutCompany__info p {
+      font-size: 1em; }
+    .mainBodyAboutUs__content__fundamentalBelief h1 {
+      font-size: 1.15em; }
+    .mainBodyAboutUs__content__fundamentalBelief p {
+      font-size: 1em; }
+    .mainBodyAboutUs__content__businessJournal__info h1 {
+      font-size: 1.15em; }
+    .mainBodyAboutUs__content__businessJournal__info hr {
+      width: 440px; }
+    .mainBodyAboutUs__content__businessJournal__info__firstText, .mainBodyAboutUs__content__businessJournal__info__downloadText {
+      font-size: .9em; } }
+
+@media only screen and (max-width: 500px) {
+  .mainBodyAboutUs__hero {
+    height: 330px; }
+  .mainBodyAboutUs__content__imgCaption {
+    font-size: .75em; }
+  .mainBodyAboutUs__content__aboutCompany h1 {
+    margin-top: 30px;
+    text-align: center; }
+  .mainBodyAboutUs__content__aboutCompany hr {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .mainBodyAboutUs__content__aboutCompany__info p {
+    font-size: .9em; }
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    width: 300px; }
+  .mainBodyAboutUs__content__fundamentalBelief p {
+    font-size: 1em; }
+  .mainBodyAboutUs__content__businessJournal__info h1 {
+    text-align: center;
+    font-size: 1.2em; }
+  .mainBodyAboutUs__content__businessJournal__info hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+  .mainBodyAboutUs__content__businessJournal__info a {
+    width: 75%;
+    font-size: 1em;
+    padding: 11px; }
+  .mainBodyAboutUs__content__businessJournal img {
+    width: 300px; } }
+
+@media only screen and (max-width: 400px) {
+  .mainBodyAboutUs__hero {
+    height: 300px; }
+  .mainBodyAboutUs__content__businessJournal__info hr {
+    width: 95%; }
+  .mainBodyAboutUs__content__businessJournal__info a {
+    font-size: .85em; } }
+
+@media only screen and (max-width: 375px) {
+  .mainBodyAboutUs__content__aboutCompany__info img {
+    width: 250px; }
+  .mainBodyAboutUs__content__fundamentalBelief hr {
+    width: 87.5%; }
+  .mainBodyAboutUs__content__businessJournal__info a {
+    width: 85%;
+    font-size: .75em; }
+  .mainBodyAboutUs__content__businessJournal img {
+    width: 250px; } }
 
 .mainBodyWork {
   width: 100%;
@@ -1689,13 +1869,14 @@ p {
       justify-content: space-between;
       padding-top: 50px; }
       .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
-        width: 24.5%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 50px; }
         .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
-          width: 300px;
+          width: 100%;
+          max-width: 300px;
           display: flex;
           flex-direction: column;
           border-radius: 10px;
@@ -1785,8 +1966,8 @@ p {
       position: relative;
       z-index: 1;
       transition: all .8s ease-in-out; }
-    .mainBodyWork__reviews button:hover {
-      cursor: pointer; }
+      .mainBodyWork__reviews button:hover {
+        cursor: pointer; }
     .mainBodyWork__reviews__button {
       width: 95%;
       margin: auto;
@@ -1794,24 +1975,199 @@ p {
       justify-content: space-between;
       max-width: 1920px; }
 
+@media only screen and (max-width: 1600px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 275px; } }
+
+@media only screen and (max-width: 1425px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 265px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 125px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__description, .mainBodyWork__main__holder__row2__workDone__entry__description, .mainBodyWork__main__holder__row3__workDone__entry__description, .mainBodyWork__main__holder__row4__workDone__entry__description {
+      padding: 8px; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+        font-size: .85em; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description p, .mainBodyWork__main__holder__row2__workDone__entry__description p, .mainBodyWork__main__holder__row3__workDone__entry__description p, .mainBodyWork__main__holder__row4__workDone__entry__description p {
+        font-size: .7em; } }
+
+@media only screen and (max-width: 1350px) {
+  .mainBodyWork__main__header h1 {
+    font-size: 1.65em; }
+  .mainBodyWork__main__header hr {
+    width: 150px; }
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 250px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 120px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__description, .mainBodyWork__main__holder__row2__workDone__entry__description, .mainBodyWork__main__holder__row3__workDone__entry__description, .mainBodyWork__main__holder__row4__workDone__entry__description {
+      padding: 8px; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description h1,
+      .mainBodyWork__main__holder__row1__workDone__entry__description p, .mainBodyWork__main__holder__row2__workDone__entry__description h1,
+      .mainBodyWork__main__holder__row2__workDone__entry__description p, .mainBodyWork__main__holder__row3__workDone__entry__description h1,
+      .mainBodyWork__main__holder__row3__workDone__entry__description p, .mainBodyWork__main__holder__row4__workDone__entry__description h1,
+      .mainBodyWork__main__holder__row4__workDone__entry__description p {
+        margin-bottom: 5px; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+        font-size: .85em; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description p, .mainBodyWork__main__holder__row2__workDone__entry__description p, .mainBodyWork__main__holder__row3__workDone__entry__description p, .mainBodyWork__main__holder__row4__workDone__entry__description p {
+        font-size: .7em; }
+  .mainBodyWork__reviews__header h1 {
+    font-size: 1.65em; }
+  .mainBodyWork__reviews__header hr {
+    width: 300px; }
+  .mainBodyWork__reviews__googleReviewGrid__individualReview {
+    padding: 18px; } }
+
+@media only screen and (max-width: 1280px) {
+  .mainBodyWork__main {
+    width: 100%;
+    padding: 0px 5% 0px 5%; }
+    .mainBodyWork__main__header h1 {
+      font-size: 1.55em; }
+    .mainBodyWork__main__header hr {
+      width: 140px; }
+    .mainBodyWork__main__holder {
+      padding-top: 25px; }
+      .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+        max-width: 225px; }
+        .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+          height: 115px; }
+        .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+          font-size: .8em; }
+  .mainBodyWork__reviews {
+    width: 100%;
+    padding: 0px 5% 0px 5%; }
+    .mainBodyWork__reviews__header {
+      margin-top: 25px; }
+      .mainBodyWork__reviews__header h1 {
+        font-size: 1.55em; }
+      .mainBodyWork__reviews__header hr {
+        width: 275px; }
+    .mainBodyWork__reviews__googleReviewGrid__individualReview {
+      width: 98.5%; }
+      .mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore span {
+        font-size: 1em; }
+      .mainBodyWork__reviews__googleReviewGrid__individualReview__comment {
+        padding: 12.5px 12.5px 0px 0px; }
+        .mainBodyWork__reviews__googleReviewGrid__individualReview__comment p {
+          font-size: .9em; } }
+
+@media only screen and (max-width: 1100px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 215px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 100px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+      font-size: .75em; } }
+
+@media only screen and (max-width: 1000px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 200px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 100px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+      font-size: .75em; } }
+
 @media only screen and (max-width: 930px) {
   .mainBodyWork {
     width: 100%; }
     .mainBodyWork__main {
       width: 100%;
       margin: 0px; }
-      .mainBodyWork__main__header {
-        padding: 0px 5% 0px 5%; }
       .mainBodyWork__main__holder {
-        justify-content: space-around;
-        padding: 30px 5% 50px 5%; }
+        justify-content: space-around; }
         .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
           width: 48.5%; }
+          .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+            max-width: 300px; }
+            .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+              height: 150px; }
     .mainBodyWork__reviews {
-      width: 100%;
-      padding: 0px 5% 0px 5%; }
+      width: 100%; }
       .mainBodyWork__reviews__header {
         margin-top: 20px; } }
+
+@media only screen and (max-width: 800px) {
+  .mainBodyWork__main__header {
+    margin-top: 25px; }
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 280px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 140px; } }
+
+@media only screen and (max-width: 700px) {
+  .mainBodyWork__main {
+    width: 100%; }
+    .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
+      width: 49%; }
+      .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+        max-width: 275px; }
+        .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+          height: 135px; } }
+
+@media only screen and (max-width: 600px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 225px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 115px; }
+  .mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore h2 {
+    font-size: .9em; }
+  .mainBodyWork__reviews__googleReviewGrid__individualReview__nameScore span {
+    font-size: .9em; }
+  .mainBodyWork__reviews__googleReviewGrid__individualReview__comment p {
+    font-size: .75em; }
+  .mainBodyWork__reviews button {
+    font-size: .75em;
+    padding: 7px; }
+  .mainBodyWork__reviews__button p {
+    font-size: .75em; } }
+
+@media only screen and (max-width: 500px) {
+  .mainBodyWork__main__header h1 {
+    text-align: center;
+    font-size: 1.25em; }
+  .mainBodyWork__main__header hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 110px; }
+  .mainBodyWork__main__holder__row1, .mainBodyWork__main__holder__row2, .mainBodyWork__main__holder__row3, .mainBodyWork__main__holder__row4 {
+    width: 100%; }
+    .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+      max-width: 275px; }
+      .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+        height: 140px; }
+      .mainBodyWork__main__holder__row1__workDone__entry__description h1, .mainBodyWork__main__holder__row2__workDone__entry__description h1, .mainBodyWork__main__holder__row3__workDone__entry__description h1, .mainBodyWork__main__holder__row4__workDone__entry__description h1 {
+        font-size: .85em; }
+  .mainBodyWork__reviews__header {
+    margin-top: 25px; }
+    .mainBodyWork__reviews__header h1 {
+      text-align: center;
+      font-size: 1.25em; }
+    .mainBodyWork__reviews__header hr {
+      margin-left: auto;
+      margin-right: auto;
+      width: 230px; }
+  .mainBodyWork__reviews__googleReviewGrid {
+    padding-left: 0px;
+    padding-right: 0px; }
+    .mainBodyWork__reviews__googleReviewGrid__individualReview {
+      width: 100%; }
+  .mainBodyWork__reviews button {
+    width: 100%; }
+  .mainBodyWork__reviews__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainBodyWork__reviews__button p {
+      margin-top: 15px; } }
+
+@media only screen and (max-width: 350px) {
+  .mainBodyWork__main__holder__row1__workDone__entry, .mainBodyWork__main__holder__row2__workDone__entry, .mainBodyWork__main__holder__row3__workDone__entry, .mainBodyWork__main__holder__row4__workDone__entry {
+    max-width: 260px; }
+    .mainBodyWork__main__holder__row1__workDone__entry__image img, .mainBodyWork__main__holder__row2__workDone__entry__image img, .mainBodyWork__main__holder__row3__workDone__entry__image img, .mainBodyWork__main__holder__row4__workDone__entry__image img {
+      height: 130px; } }
 
 .footer {
   position: absolute;
@@ -1875,19 +2231,23 @@ p {
     min-height: 60px; } }
 
 @media only screen and (max-width: 1280px) {
-  .footer__holder__bottom {
-    min-height: 40px; }
-    .footer__holder__bottom__holderForLogoName img {
-      width: 70px;
-      margin-right: 17.5px; }
-    .footer__holder__bottom__holderForLogoName p {
-      font-size: .95em; }
-    .footer__holder__bottom__copyrightInformation {
-      font-size: .75em; } }
+  .footer__holder {
+    width: 100%;
+    padding: 0px 5% 0px 5%; }
+    .footer__holder__bottom {
+      min-height: 40px; }
+      .footer__holder__bottom__holderForLogoName img {
+        width: 70px;
+        margin-right: 17.5px; }
+      .footer__holder__bottom__holderForLogoName p {
+        font-size: .95em; }
+      .footer__holder__bottom__copyrightInformation {
+        font-size: .75em; } }
 
 @media only screen and (max-width: 930px) {
   .footer__holder {
-    width: 100%; }
+    width: 100%;
+    padding: 0px; }
     .footer__holder__top {
       justify-content: center;
       height: auto;

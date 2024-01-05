@@ -97,7 +97,7 @@
             margin-bottom: 150px;
 
             &__info {
-                width: 45%;
+                width: 50%;
 
                 h1 {
                     width: 100%;
@@ -181,6 +181,346 @@
     }
 }
 
+@media only screen and (max-width: 1550px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__imgCaption {}
+
+            &__aboutCompany {
+                &__header {
+                    h1 {}
+
+                    hr {}
+                }
+
+                &__info {
+                    p {}
+
+                    img {
+                        margin-right: 5%;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                h1 {}
+
+                hr {}
+
+                p {}
+            }
+
+            &__businessJournal {
+                &__info {
+                    h1 {}
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {
+                    margin-right: 5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__imgCaption {}
+
+            &__aboutCompany {
+                &__header {
+                    h1 {}
+
+                    hr {}
+                }
+
+                &__info {
+                    p {}
+
+                    img {}
+                }
+            }
+
+            &__fundamentalBelief {
+                margin-bottom: 100px;
+
+                h1 {}
+
+                hr {}
+
+                p {}
+            }
+
+            &__businessJournal {
+                margin-bottom: 100px;
+
+                &__info {
+                    h1 {}
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1325px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__imgCaption {}
+
+            &__aboutCompany {
+                &__header {
+                    h1 {}
+
+                    hr {}
+                }
+
+                &__info {
+                    p {}
+
+                    img {
+                        margin-right: 2.5%;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+
+                h1 {}
+
+                hr {}
+
+                p {}
+            }
+
+            &__businessJournal {
+
+                &__info {
+                    h1 {}
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {
+                    margin-right: 2.5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mainBodyAboutUs {
+        &__hero {
+            height: 575px;
+        }
+
+        &__content {
+            width: 92.5%;
+
+            &__imgCaption {}
+
+            &__aboutCompany {
+                &__header {
+                    h1 {
+                        font-size: 1.65em;
+                    }
+
+                    hr {}
+                }
+
+                &__info {
+                    p {
+                        font-size: 1.1em;
+                    }
+
+                    img {
+                        width: 400px;
+                        margin-right: 7.5%;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                h1 {
+                    font-size: 1.65em;
+                }
+
+                hr {}
+
+                p {
+                    font-size: 1.30em;
+                }
+            }
+
+            &__businessJournal {
+                &__info {
+                    h1 {
+                        font-size: 1.65em;
+                    }
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {
+                    width: 300px;
+                    margin-right: 7.5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__aboutCompany {
+                &__header {
+                    h1 {
+                        font-size: 1.5em;
+                    }
+
+                    hr {
+                        width: 275px;
+                    }
+                }
+
+                &__info {
+                    p {
+                        font-size: 1em;
+                    }
+
+                    img {
+                        margin-right: 2.5%;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                h1 {
+                    font-size: 1.5em;
+                }
+
+                hr {
+                    width: 375px;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            &__businessJournal {
+                &__info {
+                    h1 {
+                        font-size: 1.5em;
+                    }
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {
+                    margin-right: 2.5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__aboutCompany {
+                &__header {
+                    h1 {}
+
+                    hr {}
+                }
+
+                &__info {
+                    p {}
+
+                    img {
+                        width: 375px;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                h1 {}
+
+                hr {}
+
+                p {}
+            }
+
+            &__businessJournal {
+                &__info {
+                    h1 {}
+
+                    hr {}
+
+                    &__firstText {}
+
+                    &__downloadText {}
+
+                    a {}
+                }
+
+                img {
+                    width: 275px;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 930px) {
     .mainBodyAboutUs {
         &__hero {
@@ -223,7 +563,8 @@
             }
 
             &__fundamentalBelief {
-                margin-bottom: 85px;
+                margin-bottom: 75px;
+                width: 100%;
 
                 h1 {
                     font-size: 1.25em;
@@ -234,20 +575,25 @@
                 }
 
                 p {
-                    width: 700px;
-                    font-size: 1.125em
+                    width: auto;
+                    font-size: 1.125em;
+                    margin-left: 2.5%;
+                    margin-right: 2.5%;
                 }
             }
 
             &__businessJournal {
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 100px;
+                margin-bottom: 75px;
                 width: 100%;
 
                 &__info {
                     margin: 0px 5% 0px 5%;
                     width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
 
                     h1 {
                         font-size: 1.25em;
@@ -262,12 +608,264 @@
                         font-size: .9375em;
                     }
 
+                    a {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 350px;
+                        text-align: center;
+                    }
+
                 }
 
                 img {
                     width: 325px;
                     margin-top: 50px;
                     margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__imgCaption {
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+            }
+
+            &__aboutCompany {
+                margin: 0px 2.5% 0px 2.5%;
+            }
+
+            &__fundamentalBelief {}
+
+            &__businessJournal {
+                &__info {
+                    margin: 0px 2.5% 0px 2.5%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .mainBodyAboutUs {
+        &__hero {
+            height: 380px;
+        }
+
+        &__content {
+            width: 100%;
+
+            &__imgCaption {}
+
+            &__aboutCompany {
+
+                h1 {
+                    font-size: 1.15em
+                }
+
+                hr {
+                    width: 220px;
+                }
+
+                &__info {
+
+                    p {
+                        font-size: 1em;
+                    }
+
+                    img {}
+                }
+            }
+
+            &__fundamentalBelief {
+
+                h1 {
+                    font-size: 1.15em;
+                }
+
+                hr {}
+
+                p {
+                    font-size: 1em
+                }
+            }
+
+            &__businessJournal {
+
+                &__info {
+
+                    h1 {
+                        font-size: 1.15em;
+                    }
+
+                    hr {
+                        width: 440px;
+                    }
+
+                    &__firstText,
+                    &__downloadText {
+                        font-size: .9em;
+                    }
+
+                    a {}
+
+                }
+
+                img {}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainBodyAboutUs {
+        &__hero {
+            height: 330px;
+        }
+
+        &__content {
+            &__imgCaption {
+                font-size: .75em;
+            }
+
+            &__aboutCompany {
+                h1 {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+
+                hr {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                &__info {
+                    p {
+                        font-size: .9em;
+                    }
+
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                h1 {}
+
+                hr {}
+
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            &__businessJournal {
+                &__info {
+                    h1 {
+                        text-align: center;
+                        font-size: 1.2em;
+                    }
+
+                    hr {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    a {
+                        width: 75%;
+                        font-size: 1em;
+                        padding: 11px;
+                    }
+                }
+
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainBodyAboutUs {
+        &__hero {
+            height: 300px;
+        }
+
+        &__content {
+            &__imgCaption {}
+
+            &__aboutCompany {}
+
+            &__fundamentalBelief {}
+
+            &__businessJournal {
+                &__info {
+                    hr {
+                        width: 95%;
+                    }
+
+                    a {
+                        font-size: .85em
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .mainBodyAboutUs {
+        &__hero {}
+
+        &__content {
+            &__imgCaption {}
+
+            &__aboutCompany {
+                &__info {
+                    img {
+                        width: 250px;
+                    }
+                }
+            }
+
+            &__fundamentalBelief {
+                hr {
+                    width: 87.5%;
+                }
+            }
+
+            &__businessJournal {
+                &__info {
+                    a {
+                        width: 85%;
+                        font-size: .75em
+                    }
+                }
+
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .mainBodyAboutUs {
+        &__content {
+            &__businessJournal {
+                &__info {
+                    a {}
                 }
             }
         }

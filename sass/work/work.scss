@@ -37,7 +37,7 @@
             &__row2,
             &__row3,
             &__row4 {
-                width: 24.5%;
+                width: 25%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -46,7 +46,8 @@
                 &__workDone {
 
                     &__entry {
-                        width: 300px;
+                        width: 100%;
+                        max-width: 300px;
                         display: flex;
                         flex-direction: column;
                         border-radius: 10px;
@@ -180,10 +181,10 @@
             position: relative;
             z-index: 1;
             transition: all .8s ease-in-out;
-        }
 
-        button:hover {
-            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         &__button {
@@ -197,28 +198,216 @@
     }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1600px) {
     .mainBodyWork {
-        width: 100%;
-
         &__main {
-            width: 100%;
-            margin: 0px;
-
-
-            &__header {
-                padding: 0px 5% 0px 5%;
-            }
+            &__header {}
 
             &__holder {
-                justify-content: space-around;
-                padding: 30px 5% 50px 5%;
 
                 &__row1,
                 &__row2,
                 &__row3,
                 &__row4 {
-                    width: 48.5%;
+                    &__workDone {
+                        &__entry {
+                            max-width: 275px;
+
+                            &__image {}
+
+                            &__description {}
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {}
+
+            &__googleReviewGrid {}
+
+            button {}
+
+            &__button {}
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1425px) {
+    .mainBodyWork {
+        &__main {
+            &__header {}
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 265px;
+
+                            &__image {
+                                img {
+                                    height: 125px;
+                                }
+                            }
+
+                            &__description {
+                                padding: 8px;
+
+                                h1 {
+                                    font-size: .85em;
+                                }
+
+                                p {
+                                    font-size: .7em;
+                                }
+                            }
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {}
+
+            &__googleReviewGrid {}
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .mainBodyWork {
+        &__main {
+            &__header {
+                h1 {
+                    font-size: 1.65em;
+                }
+
+                hr {
+                    width: 150px;
+                }
+            }
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 250px;
+
+                            &__image {
+                                img {
+                                    height: 120px;
+                                }
+                            }
+
+                            &__description {
+                                padding: 8px;
+
+                                h1,
+                                p {
+                                    margin-bottom: 5px;
+                                }
+
+                                h1 {
+                                    font-size: .85em;
+                                }
+
+                                p {
+                                    font-size: .7em;
+                                }
+                            }
+
+                            &:hover {}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {
+                h1 {
+                    font-size: 1.65em;
+                }
+
+                hr {
+                    width: 300px;
+                }
+            }
+
+            &__googleReviewGrid {
+                &__individualReview {
+                    padding: 18px;
+                }
+            }
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .mainBodyWork {
+        &__main {
+            width: 100%;
+            padding: 0px 5% 0px 5%;
+
+            &__header {
+                h1 {
+                    font-size: 1.55em;
+                }
+
+                hr {
+                    width: 140px;
+                }
+            }
+
+            &__holder {
+                padding-top: 25px;
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 225px;
+
+                            &__image {
+                                img {
+                                    height: 115px;
+                                }
+                            }
+
+                            &__description {
+                                h1 {
+                                    font-size: .8em;
+                                }
+
+                                p {}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -228,9 +417,471 @@
             padding: 0px 5% 0px 5%;
 
             &__header {
+                margin-top: 25px;
+
+                h1 {
+                    font-size: 1.55em;
+                }
+
+                hr {
+                    width: 275px;
+                }
+            }
+
+            &__googleReviewGrid {
+                &__individualReview {
+                    width: 98.5%;
+
+                    &__nameScore {
+                        h2 {}
+
+                        .checked {}
+
+                        span {
+                            font-size: 1em;
+                        }
+                    }
+
+                    &__comment {
+                        padding: 12.5px 12.5px 0px 0px;
+
+                        p {
+                            font-size: .9em;
+                        }
+                    }
+                }
+
+                #more {}
+            }
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .mainBodyWork {
+        &__main {
+            &__header {}
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 215px;
+
+                            &__image {
+                                img {
+                                    height: 100px;
+                                }
+                            }
+
+                            &__description {
+                                h1 {
+                                    font-size: .75em;
+                                }
+
+                                p {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {}
+
+            &__googleReviewGrid {}
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainBodyWork {
+        &__main {
+            &__header {}
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 200px;
+
+                            &__image {
+                                img {
+                                    height: 100px;
+                                }
+                            }
+
+                            &__description {
+                                h1 {
+                                    font-size: .75em;
+                                }
+
+                                p {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {}
+
+            &__googleReviewGrid {}
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+    .mainBodyWork {
+        width: 100%;
+
+        &__main {
+            width: 100%;
+            margin: 0px;
+
+
+            &__header {}
+
+            &__holder {
+                justify-content: space-around;
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    width: 48.5%;
+
+                    &__workDone {
+                        &__entry {
+                            max-width: 300px;
+
+                            &__image {
+                                img {
+                                    height: 150px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            width: 100%;
+
+            &__header {
                 margin-top: 20px;
             }
         }
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+    .mainBodyWork {
+        &__main {
+            &__header {
+                margin-top: 25px;
+            }
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+
+                    &__workDone {
+                        &__entry {
+                            max-width: 280px;
+
+                            &__image {
+                                img {
+                                    height: 140px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .mainBodyWork {
+        &__main {
+            width: 100%;
+
+            &__header {}
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    width: 49%;
+
+                    &__workDone {
+                        &__entry {
+                            max-width: 275px;
+
+                            &__image {
+                                img {
+                                    height: 135px;
+                                }
+                            }
+
+                            &__description {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainBodyWork {
+        &__main {
+
+
+            &__header {}
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+
+
+                    &__workDone {
+                        &__entry {
+                            max-width: 225px;
+
+                            &__image {
+                                img {
+                                    height: 115px;
+                                }
+                            }
+
+                            &__description {}
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {
+                h1 {}
+
+                hr {}
+            }
+
+            &__googleReviewGrid {
+                &__individualReview {
+                    &__nameScore {
+                        h2 {
+                            font-size: .9em;
+                        }
+
+                        .checked {}
+
+                        span {
+                            font-size: .9em;
+                        }
+                    }
+
+                    &__comment {
+                        p {
+                            font-size: .75em;
+                        }
+                    }
+                }
+
+                #more {}
+            }
+
+            button {
+                font-size: .75em;
+                padding: 7px;
+            }
+
+            &__button {
+                p {
+                    font-size: .75em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mainBodyWork {
+        &__main {
+            &__header {
+                h1 {
+                    text-align: center;
+                    font-size: 1.25em;
+                }
+
+                hr {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 110px;
+                }
+            }
+
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    width: 100%;
+
+                    &__workDone {
+                        &__entry {
+                            max-width: 275px;
+
+                            &__image {
+                                img {
+                                    height: 140px;
+                                }
+                            }
+
+                            &__description {
+                                h1 {
+                                    font-size: .85em;
+                                }
+
+                                p {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__reviews {
+            &__header {
+                margin-top: 25px;
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.25em;
+                }
+
+                hr {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 230px;
+                }
+            }
+
+            &__googleReviewGrid {
+                padding-left: 0px;
+                padding-right: 0px;
+
+                &__individualReview {
+                    width: 100%;
+
+                    &__nameScore {
+                        h2 {}
+
+                        .checked {}
+
+                        span {}
+                    }
+
+                    &__comment {}
+                }
+
+                #more {}
+            }
+
+            button {
+                width: 100%;
+            }
+
+            &__button {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .mainBodyWork {
+        &__main {}
+
+        &__reviews {
+            &__header {}
+
+            &__googleReviewGrid {}
+
+            button {}
+
+            &__button {}
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .mainBodyWork {
+        &__main {
+            &__holder {
+
+                &__row1,
+                &__row2,
+                &__row3,
+                &__row4 {
+                    &__workDone {
+                        &__entry {
+                            max-width: 260px;
+
+                            &__image {
+                                img {
+                                    height: 130px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

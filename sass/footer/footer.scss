@@ -103,6 +103,9 @@
 @media only screen and (max-width: 1280px) {
     .footer {
         &__holder {
+            width: 100%;
+            padding: 0px 5% 0px 5%;
+
             &__top {
                 img {}
 
@@ -139,6 +142,7 @@
     .footer {
         &__holder {
             width: 100%;
+            padding: 0px;
 
             &__top {
                 justify-content: center;
