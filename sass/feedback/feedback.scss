@@ -233,6 +233,78 @@
     }
 }
 
+@media only screen and (max-width:1280px) {
+    .mainBodyFeedback {
+        &__feedbackTitle {
+            width: 100%;
+            padding: 0px 5% 0px 5%;
+
+            h1 {
+                font-size: 1.25em;
+            }
+
+            hr {
+                width: 250px;
+            }
+        }
+
+        form {
+            width: 100%;
+            padding: 0px 5% 0px 5%;
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        &__contactInfo {
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+            label {
+                font-size: 1.1em;
+                width: 90px;
+            }
+        }
+
+        input[type=checkbox] {
+            transform: scale(1.5);
+        }
+
+        .urgentMessage {
+            font-size: 1em;
+            margin-left: 20px;
+        }
+
+        .choiceText {}
+
+        &__commentOn {
+            label {
+                font-size: 1.1em;
+            }
+        }
+
+        &__options {
+            label {
+                font-size: 1.1em;
+            }
+        }
+
+        &__inputComment {
+            textarea {
+                font-size: 1.1em;
+            }
+        }
+
+        &__submitClearButtons {}
+    }
+}
+
 @media only screen and (max-width:930px) {
     .mainBodyFeedback {
         width: 100%;
@@ -283,6 +355,277 @@
                 font-size: .9375em;
 
                 &:hover {}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .mainBodyFeedback {
+        &__feedbackTitle {
+            h1 {
+                font-size: 1.3em;
+            }
+
+            hr {
+                width: 250px;
+            }
+        }
+
+        form {
+            h1 {
+                font-size: 1em;
+            }
+
+            P {
+                font-size: .9em;
+            }
+        }
+
+        &__commentOn {
+            label {
+                font-size: 1em;
+            }
+        }
+
+        &__options {
+            justify-content: space-around;
+
+            label {
+                font-size: 1em;
+            }
+        }
+
+
+        &__inputComment {
+            textarea {
+                width: 100%;
+                font-size: .9em;
+            }
+        }
+
+        &__submitClearButtons {}
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .mainBodyFeedback {
+        &__contactInfo {
+            flex-direction: column;
+            width: 100%;
+
+            &__left {
+
+                &__name,
+                &__telephone {
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                        margin-top: 5px;
+                    }
+
+                    input {
+                        margin-top: 5px;
+                        width: 100%;
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+            &__right {
+
+                &__email,
+                &__fax {
+                    flex-direction: column;
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                        margin-top: 5px;
+                    }
+
+                    input {
+                        margin-top: 5px;
+                        width: 100%;
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        input[type=checkbox] {
+            transform: scale(1.7);
+        }
+
+        &__commentOn {
+            display: flex;
+            flex-direction: column;
+
+            select {
+                margin-right: 0px;
+            }
+
+            label {
+                margin-top: 10px;
+                margin-right: 0px;
+                text-transform: lowercase;
+                font-weight: bold;
+
+                &::before {
+                    content:
+                        'If ';
+                    text-transform: capitalize;
+
+                }
+            }
+
+            input {
+                margin-top: 10px;
+                margin-right: 0px;
+            }
+        }
+
+        &__options {
+            width: 100%;
+
+            input[type=radio] {
+                margin-right: 10px;
+            }
+
+            label {
+                margin-right: 0px;
+            }
+        }
+
+        &__submitClearButtons {
+            margin-left: auto;
+            margin-right: auto;
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .mainBodyFeedback {
+        &__feedbackTitle {
+            padding: 0px 2.5% 0px 2.5%;
+
+            h1 {
+                text-align: center;
+            }
+
+            hr {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        form {
+            padding: 0px 2.5% 0px 2.5%;
+
+            h1 {
+                font-size: .85em;
+                text-align: center;
+            }
+
+            p {
+                font-size: .8em;
+            }
+        }
+
+        &__contactInfo {
+
+            label {
+                font-size: .9em;
+            }
+        }
+
+        .urgentMessage {
+            font-size: .9em;
+            margin-left: 10px;
+            line-height: 2;
+            text-align: center;
+            margin: auto;
+        }
+
+        .choiceText {
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        &__options {
+            display: flex;
+            flex-direction: column;
+
+            &__clump {
+                margin-top: 10px;
+            }
+
+            input[type=radio] {
+                margin-right: 10px;
+            }
+        }
+
+        &__inputComment {
+            textarea {
+                height: 180px;
+            }
+        }
+
+        &__submitClearButtons {
+            width: 100%;
+
+            input {
+                padding: 13px 15px 13px 15px;
+            }
+
+            input[type=submit] {
+                font-size: .9em;
+                margin-right: 0px;
+            }
+
+            input[type=reset] {
+                font-size: .9em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .mainBodyFeedback {
+        &__feedbackTitle {
+            margin-top: 30px;
+
+            h1 {
+                font-size: 1.2em;
+            }
+
+            hr {
+                width: 225px;
+            }
+        }
+
+        &__submitClearButtons {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 13px 15px 13px 15px;
+            }
+
+            input[type=submit] {
+                font-size: .9em;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+
+            input[type=reset] {
+                font-size: .9em;
             }
         }
     }

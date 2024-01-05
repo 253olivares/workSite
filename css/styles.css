@@ -1481,6 +1481,40 @@ p {
       background-color: #f0f0f0;
       cursor: pointer; }
 
+@media only screen and (max-width: 1280px) {
+  .mainBodyFeedback__feedbackTitle {
+    width: 100%;
+    padding: 0px 5% 0px 5%; }
+    .mainBodyFeedback__feedbackTitle h1 {
+      font-size: 1.25em; }
+    .mainBodyFeedback__feedbackTitle hr {
+      width: 250px; }
+  .mainBodyFeedback form {
+    width: 100%;
+    padding: 0px 5% 0px 5%;
+    margin-bottom: 30px; }
+    .mainBodyFeedback form h1 {
+      font-size: 1.2em; }
+    .mainBodyFeedback form p {
+      font-size: 1em; }
+  .mainBodyFeedback__contactInfo {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    .mainBodyFeedback__contactInfo label {
+      font-size: 1.1em;
+      width: 90px; }
+  .mainBodyFeedback input[type=checkbox] {
+    transform: scale(1.5); }
+  .mainBodyFeedback .urgentMessage {
+    font-size: 1em;
+    margin-left: 20px; }
+  .mainBodyFeedback__commentOn label {
+    font-size: 1.1em; }
+  .mainBodyFeedback__options label {
+    font-size: 1.1em; }
+  .mainBodyFeedback__inputComment textarea {
+    font-size: 1.1em; } }
+
 @media only screen and (max-width: 930px) {
   .mainBodyFeedback {
     width: 100%; }
@@ -1506,6 +1540,145 @@ p {
       font-size: .9375em; }
     .mainBodyFeedback__submitClearButtons input[type=reset] {
       font-size: .9375em; } }
+
+@media only screen and (max-width: 750px) {
+  .mainBodyFeedback__feedbackTitle h1 {
+    font-size: 1.3em; }
+  .mainBodyFeedback__feedbackTitle hr {
+    width: 250px; }
+  .mainBodyFeedback form h1 {
+    font-size: 1em; }
+  .mainBodyFeedback form P {
+    font-size: .9em; }
+  .mainBodyFeedback__commentOn label {
+    font-size: 1em; }
+  .mainBodyFeedback__options {
+    justify-content: space-around; }
+    .mainBodyFeedback__options label {
+      font-size: 1em; }
+  .mainBodyFeedback__inputComment textarea {
+    width: 100%;
+    font-size: .9em; } }
+
+@media only screen and (max-width: 700px) {
+  .mainBodyFeedback__contactInfo {
+    flex-direction: column;
+    width: 100%; }
+    .mainBodyFeedback__contactInfo__left__name, .mainBodyFeedback__contactInfo__left__telephone {
+      flex-direction: column;
+      width: 100%; }
+      .mainBodyFeedback__contactInfo__left__name label, .mainBodyFeedback__contactInfo__left__telephone label {
+        width: 100%;
+        margin-top: 5px; }
+      .mainBodyFeedback__contactInfo__left__name input, .mainBodyFeedback__contactInfo__left__telephone input {
+        margin-top: 5px;
+        width: 100%;
+        margin-right: 0px; }
+    .mainBodyFeedback__contactInfo__right__email, .mainBodyFeedback__contactInfo__right__fax {
+      flex-direction: column;
+      width: 100%; }
+      .mainBodyFeedback__contactInfo__right__email label, .mainBodyFeedback__contactInfo__right__fax label {
+        width: 100%;
+        margin-top: 5px; }
+      .mainBodyFeedback__contactInfo__right__email input, .mainBodyFeedback__contactInfo__right__fax input {
+        margin-top: 5px;
+        width: 100%;
+        margin-right: 0px; }
+  .mainBodyFeedback input[type=checkbox] {
+    transform: scale(1.7); }
+  .mainBodyFeedback__commentOn {
+    display: flex;
+    flex-direction: column; }
+    .mainBodyFeedback__commentOn select {
+      margin-right: 0px; }
+    .mainBodyFeedback__commentOn label {
+      margin-top: 10px;
+      margin-right: 0px;
+      text-transform: lowercase;
+      font-weight: bold; }
+      .mainBodyFeedback__commentOn label::before {
+        content: 'If ';
+        text-transform: capitalize; }
+    .mainBodyFeedback__commentOn input {
+      margin-top: 10px;
+      margin-right: 0px; }
+  .mainBodyFeedback__options {
+    width: 100%; }
+    .mainBodyFeedback__options input[type=radio] {
+      margin-right: 10px; }
+    .mainBodyFeedback__options label {
+      margin-right: 0px; }
+  .mainBodyFeedback__submitClearButtons {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-around; } }
+
+@media only screen and (max-width: 550px) {
+  .mainBodyFeedback__feedbackTitle {
+    padding: 0px 2.5% 0px 2.5%; }
+    .mainBodyFeedback__feedbackTitle h1 {
+      text-align: center; }
+    .mainBodyFeedback__feedbackTitle hr {
+      margin-left: auto;
+      margin-right: auto; }
+  .mainBodyFeedback form {
+    padding: 0px 2.5% 0px 2.5%; }
+    .mainBodyFeedback form h1 {
+      font-size: .85em;
+      text-align: center; }
+    .mainBodyFeedback form p {
+      font-size: .8em; }
+  .mainBodyFeedback__contactInfo label {
+    font-size: .9em; }
+  .mainBodyFeedback .urgentMessage {
+    font-size: .9em;
+    margin-left: 10px;
+    line-height: 2;
+    text-align: center;
+    margin: auto; }
+  .mainBodyFeedback .choiceText {
+    margin-top: 25px;
+    margin-bottom: 15px; }
+  .mainBodyFeedback__options {
+    display: flex;
+    flex-direction: column; }
+    .mainBodyFeedback__options__clump {
+      margin-top: 10px; }
+    .mainBodyFeedback__options input[type=radio] {
+      margin-right: 10px; }
+  .mainBodyFeedback__inputComment textarea {
+    height: 180px; }
+  .mainBodyFeedback__submitClearButtons {
+    width: 100%; }
+    .mainBodyFeedback__submitClearButtons input {
+      padding: 13px 15px 13px 15px; }
+    .mainBodyFeedback__submitClearButtons input[type=submit] {
+      font-size: .9em;
+      margin-right: 0px; }
+    .mainBodyFeedback__submitClearButtons input[type=reset] {
+      font-size: .9em; } }
+
+@media only screen and (max-width: 375px) {
+  .mainBodyFeedback__feedbackTitle {
+    margin-top: 30px; }
+    .mainBodyFeedback__feedbackTitle h1 {
+      font-size: 1.2em; }
+    .mainBodyFeedback__feedbackTitle hr {
+      width: 225px; }
+  .mainBodyFeedback__submitClearButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .mainBodyFeedback__submitClearButtons input {
+      padding: 13px 15px 13px 15px; }
+    .mainBodyFeedback__submitClearButtons input[type=submit] {
+      font-size: .9em;
+      margin-right: 0px;
+      margin-bottom: 20px; }
+    .mainBodyFeedback__submitClearButtons input[type=reset] {
+      font-size: .9em; } }
 
 .mainBodyAboutUs {
   width: 100%;
