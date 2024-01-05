@@ -46,6 +46,6 @@ $mail = new PHPMailer(true);
 echo '
 <script>
 alert("Sent Successfully");
-document.location.href = `/workSite/#/feedback`;
+document.location.href = `/#/feedback`;
 </script>';
 ?>

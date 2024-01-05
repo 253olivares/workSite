@@ -17,7 +17,7 @@
             <div class="mainBodyFeedback__contactInfo__left">
                 <div class="mainBodyFeedback__contactInfo__left__name">
                     <label for="name">Name *:</label>
-                    <input type="Name" id="name" type="text">
+                    <input type="Name" id="name" type="text" required>
                 </div>
                 <div class="mainBodyFeedback__contactInfo__left__telephone">
                     <label for="telephone">Tel:</label>
@@ -27,7 +27,7 @@
             <div class="mainBodyFeedback__contactInfo__right">
                 <div class="mainBodyFeedback__contactInfo__right__email">
                     <label for="email">E-mail *:</label>
-                    <input type="email" name="formmail_mail_email" id="email">
+                    <input type="email" name="formmail_mail_email" id="email" required>
                 </div>
                 <div class="mainBodyFeedback__contactInfo__right__fax">
                     <Label for="fax">Fax:</Label>
@@ -41,7 +41,7 @@
             WHAT ABOUT US DO YOU WANT TO COMMENT ON *?
         </h1>
         <div class="mainBodyFeedback__commentOn">
-            <select name="subjectSelect" id="subjects">
+            <select name="subjectSelect" id="subjects" required>
                 <option value="Company">Company</option>
                 <option value="Website">Products</option>
                 <option value="Services">Services</option>
@@ -76,7 +76,7 @@
             ENTER YOUR COMMENTS IN THE SPACE PROVIDED BELOW *:
         </h1>
         <div class="mainBodyFeedback__inputComment">
-            <textarea name="Comment" id="comment" cols="90" rows="11"></textarea>
+            <textarea name="Comment" id="comment" cols="90" rows="11" required></textarea>
         </div>
         <div class="mainBodyFeedback__submitClearButtons">
             <input type="submit" name="send" id="send">
