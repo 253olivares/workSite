@@ -1,0 +1,47 @@
+{
+    "workStuff": [
+        {
+            "id": 0,
+            "name": "Ivy Tech Parking Lot",
+            "date": "September 2017",
+            "type": "Video",
+            "src": "Ivy_tech_Pavement_thumbnail.png",
+            "videoSrc": "Ivy_Tech_Pavement.mp4"
+        },
+        {
+            "id": 1,
+            "name": "Monon Trl & E 16th St",
+            "date": "Summer 2022",
+            "type": "Photo",
+            "src": "16thStreetMononTrailSummer.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Boone County",
+            "date": "May 2022",
+            "type": "Photo",
+            "src": "BoomCountyStreetResurfaceSaftyEdgeMay.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Westfield",
+            "date": "April 2022",
+            "type": "Photo",
+            "src": "Westfield-April2022.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Westfield",
+            "date": "Spring 2022",
+            "type": "Photo",
+            "src": "WestFieldSpring_2022.jpeg"
+        },
+        {
+            "id": 5,
+            "name": "S 875 E",
+            "date": "Summer 2022",
+            "type": "Photo",
+            "src": "Westfield_875.jpeg"
+        }
+    ]
+}

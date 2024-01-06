@@ -1,0 +1,58 @@
+{
+    "userReviews": [
+        {
+            "id": 0,
+            "name": "CityDump Records",
+            "score": 5,
+            "comment": "Guys are always helpful and welcoming."
+        },
+        {
+            "id": 1,
+            "name": "Linda Jones",
+            "score": 5,
+            "comment": "Good service"
+        },
+        {
+            "id": 2,
+            "name": "Terry Perry",
+            "score": 5,
+            "comment": "Great company"
+        },
+        {
+            "id": 3,
+            "name": "Ken Cunningham",
+            "score": 5,
+            "comment": "Professional commercial paving company."
+        },
+        {
+            "id": 4,
+            "name": "Breanne Grady",
+            "score": 5,
+            "comment": "No Comment Given"
+        },
+        {
+            "id": 5,
+            "name": "Brandon Kelly",
+            "score": 5,
+            "comment": "No Comment Given"
+        },
+        {
+            "id": 6,
+            "name": "Irvin Daniel",
+            "score": 5,
+            "comment": "No Comment Given"
+        },
+        {
+            "id": 7,
+            "name": "Brain L",
+            "score": 5,
+            "comment": "No Comment Given"
+        },
+        {
+            "id": 8,
+            "name": "Christopher Mitchell",
+            "score": 5,
+            "comment": "No Comment Given"
+        }
+    ]
+}
