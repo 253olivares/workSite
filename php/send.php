@@ -47,7 +47,8 @@ if(isset($_POST["send"])) {
     $mail-> SMTPAuth = true;
     
     $mail->Username="gradysitefeedbackform@gmail.com";
-    $mail->Password="ewjmhzxeznyxqgys";
+    $mail->Password="ewjmhzxeznyxqgys"; 
+    // Password not current used for testing changed for final build
 
     $mail->SMTPSecure = "tls";
     $mail->Port=587;
