@@ -51,7 +51,7 @@ if(isset($_POST["send"])) {
     // Password not current used for testing changed for final build
 
     $mail->SMTPSecure = "tls";
-    $mail->Port=587
+    $mail->Port=587;
 
     $mail->setFrom("gradysitefeedbackform@gmail.com");
 
