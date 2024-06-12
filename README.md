@@ -20,4 +20,4 @@ Updates Nov / Dec 2023: The site was reconstructed by me again in 2023 near the 
 
 The site design was mocked and created using Adobe XD which can be found in the root directory. 
 
-#*June 2024 - Site design is no longer being utilized Git hub remains to document my work and a git pages will be created for portfolio use.*
+# *June 2024 - Site design is no longer being utilized Git hub remains to document my work and a git pages will be created for portfolio use.*
