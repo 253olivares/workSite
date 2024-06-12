@@ -1,4 +1,4 @@
-# Coding Repository for [GradyBrothers.com](https://www.gradybros.com/ "GradyBrothers.com")
+# Coding Repository for GradyBrothersSite [OLD]
 
 This was an organization I was previously affiliated with.
 
@@ -16,7 +16,8 @@ This page utilizes single-page application practice and was built to be responsi
 
 Frameworks: None (No framework was utilized at the time of this project)
 
-Updates Nov / Dec 2023: The site was reconstructed by me again in 2023 near the end before I left the company to fix any ongoing bugs that existed since my original creation of the site in 2022.  I continue to update the site when needed by the company. 
+Updates Nov / Dec 2023: The site was reconstructed by me again in 2023 near the end before I left the company to fix any ongoing bugs that existed since my original creation of the site in 2022. 
 
 The site design was mocked and created using Adobe XD which can be found in the root directory. 
 
+June 2024 - Site design is no longer being utilized Git hub remains to document my work and a git pages will be created for portfolio use.
